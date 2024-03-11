@@ -6,6 +6,12 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('welcome_message');
+        $data['pageTitle'] = "Casa";
+        return view('home', $data);
+    }
+    public function profile(): string
+    {
+        $data['pageTitle'] = "Perfil";
+        return view('pages/profile', $data);
     }
 }
