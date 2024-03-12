@@ -18,8 +18,7 @@ $routes->get('/logout', 'UserController::destroy');
 $routes->post('/register', 'UserController::store');
 $routes->post('/login', 'UserController::loginStore');
 
-//Adms routes
-$routes->group('admin', ['filter' => 'auth'], function($routes){
-    $routes->get('/', 'Home::index', ['as'=> 'admin']);
-});
+$routes->get('/', 'Home::index', ['filter' => 'auth']);
+$routes->get('profile', 'Home::profile', ['filter' => 'auth']);
+;
 

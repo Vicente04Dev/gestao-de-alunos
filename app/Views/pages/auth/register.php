@@ -13,6 +13,9 @@
             </div>
 
             <form class="login100-form validate-form" method="post" action="<?= route_to('register') ?>">
+                <?= csrf_field() ?>
+                <?= session()->getFlashdata('erro_cadastro') ?>
+                <?= validation_list_errors() ?>
                 <?php if (session()->has('erro_cadastro')): ?>
                     <div class="alert alert-danger" role="alert">
                         <?= session()->getFlashdata('erro_cadastro') ?>
@@ -20,7 +23,8 @@
                 <?php endif ?>
                 <div class="wrap-input100 validate-input m-b-26">
                     <span class="label-input100">Email</span>
-                    <input class="input100" type="email" name="email" placeholder="digite seu email">
+                    <input class="input100" type="email" name="email" value="<?= set_value('email') ?>"
+                        placeholder="digite seu email">
                     <span class="focus-input100"></span>
                     <span class="text text-danger">
                         <?= session()->getFlashdata('erros')['email'] ?? '' ?>
@@ -28,7 +32,8 @@
                 </div>
                 <div class="wrap-input100 validate-input m-b-26">
                     <span class="label-input100">Nome</span>
-                    <input class="input100" type="text" name="nome" placeholder="digite seu nome">
+                    <input class="input100" type="text" name="nome" <?= set_value('nome') ?>
+                        placeholder="digite seu nome">
                     <span class="focus-input100"></span>
                     <span class="text text-danger">
                         <?= session()->getFlashdata('erros')['nome'] ?? '' ?>
@@ -37,7 +42,8 @@
 
                 <div class="wrap-input100 validate-input m-b-18">
                     <span class="label-input100">Senha</span>
-                    <input class="input100" type="password" name="senha" placeholder="Digite sua senha">
+                    <input class="input100" type="password" name="senha" <?= set_value('senha') ?>
+                        placeholder="Digite sua senha">
                     <span class="focus-input100"></span>
                     <span class="text text-danger">
                         <?= session()->getFlashdata('erros')['senha'] ?? '' ?>

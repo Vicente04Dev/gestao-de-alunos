@@ -59,14 +59,17 @@ class UserController extends BaseController
     }
     public function login(): string
     {
+        helper('form');
         return view('pages/auth/login');
     }
     public function register(): string
     {
+        helper('form');
         return view('pages/auth/register');
     }
     public function loginStore()
     {
+        helper('form');
         $validated = $this->validate(
             [
                 'email' => 'required|valid_email',
@@ -100,7 +103,7 @@ class UserController extends BaseController
         session()->set('user', $userFound);
         unset($userFound['senha']);
 
-        return redirect()->route('admin');
+        return redirect()->route('/');
         
     }
     
