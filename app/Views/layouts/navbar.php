@@ -11,4 +11,15 @@
         <a href="#" class="nav-link">Contact</a>
       </li>
     </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" href="<?= route_to('logout'); ?>" role="button">
+          <i class="fas fa-sign-out-alt"></i>
+          Sair
+        </a>
+      </li>
+    </ul>
   </nav>
