@@ -15,8 +15,8 @@
         </div>
         <div class="info">
           <a href="#" class="d-block">
-            <?php if(auth()->loggedIn()): ?>
-              <?= auth()->user()->username ?>
+            <?php if(session()->has('user')): ?>
+              <?= session()->get('user')['nome']; ?>
             <?php endif ?>
           </a>
         </div>

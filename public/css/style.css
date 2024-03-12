@@ -227,3 +227,7 @@
       transform: translateX(-20px);
     }
   }
+
+  .texto-erro{
+    color: red;
+  }

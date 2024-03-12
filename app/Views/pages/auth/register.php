@@ -1,35 +1,65 @@
 <?= $this->extend('layouts/auth'); ?>
 <?= $this->section('content'); ?>
 
-<!--FORMULÁRIO DE CADASTRO-->
-<div id="cadastro">
-    <form method="post" action="">
-        <h1>Cadastro</h1>
+<!--FORMULÁRIO DE LOGIN-->
 
-        <p>
-            <label for="nome_cad">Seu nome</label>
-            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Luiz Augusto" />
-        </p>
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <div class="login100-form-title" style="background-image: url(images/bg-01.jpg);">
+                <span class="login100-form-title-1">
+                    Cadastrar
+                </span>
+            </div>
 
-        <p>
-            <label for="email_cad">Seu e-mail</label>
-            <input id="email_cad" name="email_cad" required="required" type="email"
-                placeholder="contato@htmlecsspro.com" />
-        </p>
+            <form class="login100-form validate-form" method="post" action="<?= route_to('register') ?>">
+                <?php if (session()->has('erro_cadastro')): ?>
+                    <div class="alert alert-danger" role="alert">
+                        <?= session()->getFlashdata('erro_cadastro') ?>
+                    </div>
+                <?php endif ?>
+                <div class="wrap-input100 validate-input m-b-26">
+                    <span class="label-input100">Email</span>
+                    <input class="input100" type="email" name="email" placeholder="digite seu email">
+                    <span class="focus-input100"></span>
+                    <span class="text text-danger">
+                        <?= session()->getFlashdata('erros')['email'] ?? '' ?>
+                    </span>
+                </div>
+                <div class="wrap-input100 validate-input m-b-26">
+                    <span class="label-input100">Nome</span>
+                    <input class="input100" type="text" name="nome" placeholder="digite seu nome">
+                    <span class="focus-input100"></span>
+                    <span class="text text-danger">
+                        <?= session()->getFlashdata('erros')['nome'] ?? '' ?>
+                    </span>
+                </div>
 
-        <p>
-            <label for="senha_cad">Sua senha</label>
-            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="1234" />
-        </p>
+                <div class="wrap-input100 validate-input m-b-18">
+                    <span class="label-input100">Senha</span>
+                    <input class="input100" type="password" name="senha" placeholder="Digite sua senha">
+                    <span class="focus-input100"></span>
+                    <span class="text text-danger">
+                        <?= session()->getFlashdata('erros')['senha'] ?? '' ?>
+                    </span>
+                </div>
 
-        <p>
-            <input type="submit" value="Cadastrar" />
-        </p>
+                <div class="flex-sb-m w-full p-b-30">
+                    <div>
+                        Já tem uma conta?
+                        <a href="<?= route_to('login'); ?>" class="txt1">
+                            Entrar
+                        </a>
+                    </div>
+                </div>
 
-        <p class="link">
-            Já tem conta?
-            <a href="<?= route_to('login') ?>"> Ir para Login </a>
-        </p>
-    </form>
+                <div class="container-login100-form-btn">
+                    <button class="login100-form-btn">
+                        Cadastrar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 <?= $this->endSection(); ?>
