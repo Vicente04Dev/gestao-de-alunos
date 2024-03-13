@@ -946,3 +946,226 @@ INFO - 2024-03-12 19:29:54 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-03-12 19:29:54 --> CSRF token verified.
 INFO - 2024-03-12 19:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-03-12 19:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:42:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:42:42 --> CSRF token verified.
+INFO - 2024-03-12 21:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:42:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:42:53 --> CSRF token verified.
+INFO - 2024-03-12 21:42:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:43:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:43:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:43:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:44:01 --> CSRF token verified.
+INFO - 2024-03-12 21:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 21:49:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 22:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 22:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 22:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 22:02:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 22:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-12 22:02:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-12 23:03:09 --> mysqli_sql_exception: Table 'users' already exists in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-220653_User.php(41): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\User->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-03-12 23:04:24 --> mysqli_sql_exception: Invalid default value for 'updated_at' in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-220653_User.php(41): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\User->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-03-12 23:06:37 --> mysqli_sql_exception: Incorrect table definition; there can be only one auto column and it must be defined as a key in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-224155_Professores.php(64): CodeIgniter\Database\Forge->createTable('professores')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\Professores->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-03-12 23:08:02 --> mysqli_sql_exception: Can't create table `gestao`.`encarregados` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-225146_Encarregados.php(63): CodeIgniter\Database\Forge->createTable('encarregados')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\Encarregados->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-03-12 23:09:30 --> mysqli_sql_exception: Can't create table `gestao`.`encarregados` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-225146_Encarregados.php(62): CodeIgniter\Database\Forge->createTable('encarregados')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\Encarregados->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-03-12 23:14:27 --> mysqli_sql_exception: Can't create table `gestao`.`encarregados` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-225146_Encarregados.php(64): CodeIgniter\Database\Forge->createTable('encarregados')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\Encarregados->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-03-12 23:16:05 --> mysqli_sql_exception: Can't create table `gestao`.`encarregados` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-225146_Encarregados.php(65): CodeIgniter\Database\Forge->createTable('encarregados')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\Encarregados->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-03-12 23:17:54 --> mysqli_sql_exception: Can't create table `gestao`.`encarregados` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-225146_Encarregados.php(64): CodeIgniter\Database\Forge->createTable('encarregados')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\Encarregados->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-03-12 23:25:53 --> mysqli_sql_exception: Can't create table `gestao`.`encarregados` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-225146_Encarregados.php(64): CodeIgniter\Database\Forge->createTable('encarregados')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\Encarregados->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-03-12 23:33:11 --> mysqli_sql_exception: Can't create table `gestao`.`encarregados` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-225146_Encarregados.php(65): CodeIgniter\Database\Forge->createTable('encarregados')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\Encarregados->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-03-12 23:46:17 --> mysqli_sql_exception: Can't create table `gestao`.`encarregados` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-225146_Encarregados.php(65): CodeIgniter\Database\Forge->createTable('encarregados')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\Encarregados->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\BaseCommand.php(115): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2024-03-12 23:51:21 --> mysqli_sql_exception: Can't create table `gestao`.`encarregados` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-225146_Encarregados.php(65): CodeIgniter\Database\Forge->createTable('encarregados')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\Encarregados->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\BaseCommand.php(115): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2024-03-12 23:54:05 --> mysqli_sql_exception: Can't create table `gestao`.`encarregados` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-225146_Encarregados.php(63): CodeIgniter\Database\Forge->createTable('encarregados')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\Encarregados->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}

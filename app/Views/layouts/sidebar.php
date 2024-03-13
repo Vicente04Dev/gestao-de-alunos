@@ -14,7 +14,7 @@
           <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">
+          <a href="/" class="d-block">
             <?php if(session()->has('user')): ?>
               <?= session()->get('user')['nome']; ?>
             <?php endif ?>
