@@ -31,7 +31,7 @@ class UserModel extends Model
 
     // Callbacks
     protected $allowCallbacks = true;
-    protected $beforeInsert   = ['encrytSenha'];
+    protected $beforeInsert   = [];
     protected $afterInsert    = [];
     protected $beforeUpdate   = [];
     protected $afterUpdate    = [];
@@ -42,7 +42,21 @@ class UserModel extends Model
 
     protected function encrytSenha($args){
         
-        $args['data']['senha'] = password_hash($args['data']['senha'], PASSWORD_DEFAULT);
+        //$args['data']['senha'] = password_hash($args['data']['senha'], PASSWORD_DEFAULT);
+        $encrypt = \Config\Services::encrypter();
+
+        $args['data']['senha'] = $encrypt->encrypt($args['data']['senha']);
+
+        return $args;
+    }
+    
+    protected function dencrytSenha($args){
+        
+        $encrypt = \Config\Services::encrypter();
+
+        //echo md5($args['data']['senha']);
+        
+        $args['data']['senha'] = $encrypt->decrypt($args['data']['senha']);
 
         return $args;
     }

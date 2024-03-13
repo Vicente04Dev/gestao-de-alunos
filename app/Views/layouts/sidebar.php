@@ -43,6 +43,38 @@
               </p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="<?= route_to('professores') ?>" class="nav-link <?= current_url() == base_url('professores') ? 'active' : ''; ?>">
+              <i class="nav-icon fas fa-user"></i>
+              <p>
+                Professores
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="<?= route_to('users') ?>" class="nav-link <?= current_url() == base_url('users') ? 'active' : ''; ?>">
+              <i class="nav-icon fas fa-user"></i>
+              <p>
+                Usuários
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="<?= route_to('alunos') ?>" class="nav-link <?= current_url() == base_url('alunos') ? 'active' : ''; ?>">
+              <i class="nav-icon fas fa-user"></i>
+              <p>
+                Alunos
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="<?= route_to('encarregados') ?>" class="nav-link <?= current_url() == base_url('encarregados') ? 'active' : ''; ?>">
+              <i class="nav-icon fas fa-user"></i>
+              <p>
+                Encarregados
+              </p>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

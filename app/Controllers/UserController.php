@@ -9,6 +9,10 @@ use CodeIgniter\HTTP\ResponseInterface;
 class UserController extends BaseController
 {
 
+    public function index(){
+        $data['pageTitle'] = 'Gerenciamento de usuários';
+        return view('pages/users', $data);
+    }
     public function store()
     {
         //
@@ -41,7 +45,7 @@ class UserController extends BaseController
         $inserted = $user->insert($this->request->getPost());
         
         if($inserted){
-            return redirect()->route('admin');
+            return redirect()->route('/');
         }else{
             return redirect()->route('register')->with('erro_cadastro', 'Ocorreu um erro ao se cadastrar');
         }
@@ -80,6 +84,7 @@ class UserController extends BaseController
                 ]
             ]
             );
+            
         if(!$validated){
             return redirect()->route('login')->with('erros', $this->validator->getErrors());
         }
