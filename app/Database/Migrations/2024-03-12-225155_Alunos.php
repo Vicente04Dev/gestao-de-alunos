@@ -3,6 +3,7 @@
 namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
+use CodeIgniter\Database\RawSql;
 
 class Alunos extends Migration
 {
@@ -50,7 +51,8 @@ class Alunos extends Migration
                 'type' => 'TEXT',
             ],
             'created_at' => [
-                'type' => 'TIMESTAMP'
+                'type' => 'TIMESTAMP',
+                'default' => new RawSql('CURRENT_TIMESTAMP'),
             ],
             'updated_at' => [
                 'type' => 'DATETIME',

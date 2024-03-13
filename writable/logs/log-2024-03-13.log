@@ -43,3 +43,220 @@ Stack trace:
 #12 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
 #13 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
 #14 {main}
+ERROR - 2024-03-13 07:47:00 --> mysqli_sql_exception: Can't create table `gestao`.`encarregados` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-225146_Encarregados.php(63): CodeIgniter\Database\Forge->createTable('encarregados')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\Encarregados->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\BaseCommand.php(115): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2024-03-13 07:50:39 --> mysqli_sql_exception: Invalid default value for 'updated_at' in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-220653_User.php(42): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\User->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\BaseCommand.php(115): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2024-03-13 07:52:32 --> mysqli_sql_exception: Invalid default value for 'updated_at' in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-220653_User.php(42): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\User->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-03-13 07:53:25 --> mysqli_sql_exception: Invalid default value for 'updated_at' in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-220653_User.php(42): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\User->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-03-13 07:54:14 --> mysqli_sql_exception: Can't create table `gestao`.`encarregados` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-225146_Encarregados.php(63): CodeIgniter\Database\Forge->createTable('encarregados')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\Encarregados->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-03-13 07:57:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ADD CONSTRAINT `encarregados_aluno_id_foreign` FOREIGN KEY (`aluno_id`) REFER...' at line 13 in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-225146_Encarregados.php(64): CodeIgniter\Database\Forge->createTable('encarregados')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\Encarregados->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-03-13 08:02:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ADD CONSTRAINT FOREIGN KEY ( "aluno_id" ) REFERENCES "alunos" ( "id" ) ;,
+	KE...' at line 13 in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-225146_Encarregados.php(64): CodeIgniter\Database\Forge->createTable('encarregados')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\Encarregados->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-03-13 08:03:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ADD CONSTRAINT FOREIGN KEY ( "aluno_id" ) REFERENCES "alunos" ( "id" ),
+	KEY ...' at line 13 in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-225146_Encarregados.php(64): CodeIgniter\Database\Forge->createTable('encarregados')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\Encarregados->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-03-13 08:04:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ADD CONSTRAINT FOREIGN KEY ( `aluno_id` ) REFERENCES `alunos` ( `id` ),
+	KEY ...' at line 13 in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-225146_Encarregados.php(64): CodeIgniter\Database\Forge->createTable('encarregados')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\Encarregados->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-03-13 08:06:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ALTER TABLE `encarregados`ADD CONSTRAINT FOREIGN KEY ( `aluno_id` ) REFERENCE...' at line 13 in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-225146_Encarregados.php(64): CodeIgniter\Database\Forge->createTable('encarregados')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\Encarregados->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-03-13 08:06:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ALTER TABLE `encarregados` ADD CONSTRAINT FOREIGN KEY ( `aluno_id` ) REFERENC...' at line 13 in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-225146_Encarregados.php(64): CodeIgniter\Database\Forge->createTable('encarregados')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\Encarregados->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\BaseCommand.php(115): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2024-03-13 08:07:32 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ALTER TABLE `encarregados` ADD CONSTRAINT `aluno_encarregado` FOREIGN KEY ( `...' at line 13 in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-225146_Encarregados.php(64): CodeIgniter\Database\Forge->createTable('encarregados')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\Encarregados->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\BaseCommand.php(115): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2024-03-13 08:09:43 --> mysqli_sql_exception: Can't create table `gestao`.`encarregados` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-225146_Encarregados.php(62): CodeIgniter\Database\Forge->createTable('encarregados')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\Encarregados->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\BaseCommand.php(115): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2024-03-13 08:11:42 --> mysqli_sql_exception: Can't create table `gestao`.`encarregados` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\projects\gestao-de-alunos\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\projects\gestao-de-alunos\app\Database\Migrations\2024-03-12-225146_Encarregados.php(62): CodeIgniter\Database\Forge->createTable('encarregados')
+#5 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(865): App\Database\Migrations\Encarregados->up()
+#6 C:\projects\gestao-de-alunos\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\projects\gestao-de-alunos\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\projects\gestao-de-alunos\system\CLI\BaseCommand.php(115): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\projects\gestao-de-alunos\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\projects\gestao-de-alunos\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\projects\gestao-de-alunos\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\projects\gestao-de-alunos\spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}

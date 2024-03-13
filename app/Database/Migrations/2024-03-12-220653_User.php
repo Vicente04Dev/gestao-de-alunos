@@ -3,6 +3,7 @@
 namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
+use CodeIgniter\Database\RawSql;
 
 class User extends Migration
 {
@@ -28,7 +29,8 @@ class User extends Migration
                 'constraint' => '255',
             ],
             'created_at' => [
-                'type' => 'TIMESTAMP'
+                'type' => 'TIMESTAMP',
+                'default' => new RawSql('CURRENT_TIMESTAMP'),
             ],
             'updated_at' => [
                 'type' => 'DATETIME',

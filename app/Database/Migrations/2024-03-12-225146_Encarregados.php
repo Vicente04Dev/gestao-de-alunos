@@ -55,10 +55,9 @@ class Encarregados extends Migration
             ],
         ]);
         
-        $this->forge->addKey('id', true);
+        $this->forge->addKey('id');
         $this->forge->addUniqueKey('telefone');
-        
-       $this->forge->addForeignKey('aluno_id', 'alunos', 'id');
+        $this->forge->addForeignKey('aluno_id', 'alunos', 'id');
 
         $this->forge->createTable('encarregados');
     }
