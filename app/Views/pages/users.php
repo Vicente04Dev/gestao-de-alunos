@@ -44,17 +44,24 @@
                     <form>
                         <div class="row mb-3">
 
-                            <div class="mb-1 col-sm-4">
+                            <div class="mb-1 col-sm-3">
                                 <label for="nome">Nome</label>
                                 <input type="text" class="form-control" id="nome" placeholder="nome do usuário">
                             </div>
-                            <div class="mb-1 col-sm-4">
+                            <div class="mb-1 col-sm-3">
                                 <label for="usuario">Nome de usuário</label>
                                 <input type="text" class="form-control" id="usuario" placeholder="nome de acesso">
                             </div>
-                            <div class="mb-1 col-sm-4">
+                            <div class="mb-1 col-sm-3">
                                 <label for="senha">Senha</label>
                                 <input type="password" class="form-control" id="senha" placeholder="senha de acesso">
+                            </div>
+                            <div class="mb-1 col-sm-3">
+                                <label for="papel">Papel</label>
+                                <select class="form-select" id="turno" name="papel">
+                                    <option value="2">Professor</option>
+                                    <option value="1">Administrador</option>
+                                </select>
                             </div>
                         </div>
                         <button type="submit" class="btn btn-primary btn-md">Cadastrar usuário</button>
