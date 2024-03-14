@@ -70,7 +70,7 @@
 
                             <div class="mb-1 col-sm-4">
                                 <label for="nome">Nome do aluno</label>
-                                <input type="text" class="form-control" id="nome" placeholder="nome do aluno">
+                                <input type="text" class="form-control" name="nome" id="nome" placeholder="nome do aluno">
                             </div>
 
                             <div class="mb-1 col-sm-2">
@@ -94,23 +94,22 @@
 
                             <div class="mb-1 col-sm-3">
                                 <label for="data_nascimento">Data de nascimento</label>
-                                <input type="date" class="form-control" id="data_nascimento"
-                                    placeholder="nome do aluno">
+                                <input type="date" class="form-control" id="data_nascimento" name="data_nascimento" >
                             </div>
                         </div>
                         <div class="row">
                             <div class="mb-1 col-sm-3">
                                 <label for="sala">Sala</label>
-                                <input type="text" class="form-control" id="sala" placeholder="digite o nº da sala">
+                                <input type="text" class="form-control" id="sala" name="sala" placeholder="digite o nº da sala">
                             </div>
                             <div class="mb-1 col-sm-4">
                                 <label for="localizacao">Localização</label>
-                                <input type="text" class="form-control" id="localizacao"
+                                <input type="text" class="form-control" id="localizacao" name="localizacao" 
                                     placeholder="localização do aluno">
                             </div>
                             <div class="mb-3 col-sm-5">
                                 <label for="obs">Observações</label>
-                                <textarea class="form-control" name="" id="obs"
+                                <textarea class="form-control" name="obs" id="obs"
                                     placeholder="notas sobre o aluno (opcional)" cols="30" ></textarea>
                             </div>
 

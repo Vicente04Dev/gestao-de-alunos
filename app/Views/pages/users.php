@@ -46,19 +46,19 @@
 
                             <div class="mb-1 col-sm-3">
                                 <label for="nome">Nome</label>
-                                <input type="text" class="form-control" id="nome" placeholder="nome do usuário">
+                                <input type="text" class="form-control" name="nome" id="nome" placeholder="nome do usuário">
                             </div>
                             <div class="mb-1 col-sm-3">
-                                <label for="usuario">Nome de usuário</label>
-                                <input type="text" class="form-control" id="usuario" placeholder="nome de acesso">
+                                <label for="nome">Nome de usuário</label>
+                                <input type="text" class="form-control" name="nome" id="nome" placeholder="nome de acesso">
                             </div>
                             <div class="mb-1 col-sm-3">
                                 <label for="senha">Senha</label>
-                                <input type="password" class="form-control" id="senha" placeholder="senha de acesso">
+                                <input type="password" class="form-control" name="senha" id="senha" placeholder="senha de acesso">
                             </div>
                             <div class="mb-1 col-sm-3">
                                 <label for="papel">Papel</label>
-                                <select class="form-select" id="turno" name="papel">
+                                <select class="form-select" id="papel" name="papel">
                                     <option value="2">Professor</option>
                                     <option value="1">Administrador</option>
                                 </select>

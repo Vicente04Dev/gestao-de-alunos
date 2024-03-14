@@ -57,45 +57,45 @@
 
                             <div class="mb-1 col-sm-4">
                                 <label for="nome">Nome do professor</label>
-                                <input type="text" class="form-control" id="nome" placeholder="nome do professor">
+                                <input type="text" class="form-control" name="nome" id="nome" placeholder="nome do professor">
                             </div>
 
                             <div class="mb-1 col-sm-4">
                                 <label for="data_nascimento">Data de nascimento</label>
-                                <input type="date" class="form-control" id="data_nascimento">
+                                <input type="date" class="form-control" name="data_nascimento" id="data_nascimento">
                             </div>
                             <div class="mb-1 col-sm-4">
                                 <label for="nivel">Nível acadêmico</label>
-                                <input type="text" class="form-control" id="nivel" placeholder="nível acadêmico do professor">
+                                <input type="text" class="form-control" name="nivel" id="nivel" placeholder="nível acadêmico do professor">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="mb-1 col-sm-4">
                                 <label for="telefone">Telefone</label>
-                                <input type="text" class="form-control" id="telefone"
-                                    placeholder="nº do professor">
+                                <input type="text" name="telefone" class="form-control" id="telefone"
+                                    placeholder="nº de telefone do professor">
                             </div>
                             <div class="mb-1 col-sm-4">
                                 <label for="localizacao">Localização</label>
-                                <input type="text" class="form-control" id="localizacao"
+                                <input type="text" class="form-control" name="localizacao" id="localizacao"
                                     placeholder="onde o professor mora?">
                             </div>
                             <div class="mb-3 col-sm-4">
                                 <label for="obs">Observações</label>
-                                <textarea class="form-control" name="" id="obs"
+                                <textarea class="form-control" name="obs" id="obs"
                                 placeholder="notas sobre o professor (opcional)" cols="30" ></textarea>
                             </div>
                             
                             <div class="col-sm-5 mb-2">
                                 <div class="text-left mb-2">
-                                    <img src="images/wilson.jpg" alt="" width="200" height="150">
+                                    <img src="images/wilson.jpg" alt="imagem do professor" width="200" height="150">
                                 </div>
                                 <input type="file" class="form-control" name="imagem">
                             </div>
                             <div class="mb-2 col-sm-4">
                                 <label for="usuario">Usuário do professor</label>
-                                <select class="form-select" id="turno" name="turno">
+                                <select class="form-select" id="turno" name="usuario">
                                     <option value="1">Manhã</option>
                                     <option value="2">Tarde</option>
                                     <option value="3">Noite</option>
