@@ -9,4 +9,9 @@ class Home extends BaseController
         $data['pageTitle'] = "Casa";
         return view('home', $data);
     }
+    public function admin(): string
+    {
+        $data['pageTitle'] = "Casa";
+        return view('admin', $data);
+    }
 }

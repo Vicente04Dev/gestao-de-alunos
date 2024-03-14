@@ -45,16 +45,10 @@ class UserController extends BaseController
         $inserted = $user->insert($this->request->getPost());
         
         if($inserted){
-            return redirect()->route('/');
+            return redirect()->route('admin');
         }else{
             return redirect()->route('register')->with('erro_cadastro', 'Ocorreu um erro ao se cadastrar');
         }
-    }
-
-    public function profile(): string
-    {
-        $data['pageTitle'] = "Perfil";
-        return view('pages/profile', $data);
     }
     public function login(): string
     {
@@ -103,7 +97,7 @@ class UserController extends BaseController
         session()->set('user', $userFound);
         unset($userFound['senha']);
 
-        return redirect()->route('/');
+        return redirect()->route('admin');
         
     }
     

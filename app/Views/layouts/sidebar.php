@@ -28,7 +28,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="<?= route_to('/') ?>" class="nav-link <?= current_url() == base_url('/') ? 'active' : ''; ?>">
+            <a href="<?= route_to('admin') ?>" class="nav-link <?= current_url() == base_url('admin') ? 'active' : ''; ?>">
               <i class="nav-icon fas fa-home"></i>
               <p>
                 Home
@@ -36,15 +36,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?= route_to('profile') ?>" class="nav-link <?= current_url() == base_url('profile') ? 'active' : ''; ?>">
-              <i class="nav-icon fas fa-user"></i>
-              <p>
-                Profile
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="<?= route_to('professores') ?>" class="nav-link <?= current_url() == base_url('professores') ? 'active' : ''; ?>">
+            <a href="<?= route_to('admin.professores') ?>" class="nav-link <?= current_url() == base_url('professores') ? 'active' : ''; ?>">
               <i class="nav-icon fas fa-user"></i>
               <p>
                 Professores
@@ -52,7 +44,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?= route_to('users') ?>" class="nav-link <?= current_url() == base_url('users') ? 'active' : ''; ?>">
+            <a href="<?= route_to('admin.users') ?>" class="nav-link <?= current_url() == base_url('users') ? 'active' : ''; ?>">
               <i class="nav-icon fas fa-user"></i>
               <p>
                 Usuários
@@ -60,7 +52,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?= route_to('alunos') ?>" class="nav-link <?= current_url() == base_url('alunos') ? 'active' : ''; ?>">
+            <a href="<?= route_to('admin.alunos') ?>" class="nav-link <?= current_url() == base_url('alunos') ? 'active' : ''; ?>">
               <i class="nav-icon fas fa-user"></i>
               <p>
                 Alunos
@@ -68,7 +60,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?= route_to('encarregados') ?>" class="nav-link <?= current_url() == base_url('encarregados') ? 'active' : ''; ?>">
+            <a href="<?= route_to('admin.encarregados') ?>" class="nav-link <?= current_url() == base_url('encarregados') ? 'active' : ''; ?>">
               <i class="nav-icon fas fa-user"></i>
               <p>
                 Encarregados
