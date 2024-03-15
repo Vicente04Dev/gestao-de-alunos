@@ -25,20 +25,17 @@ $routes->addRedirect('/', 'admin');
 $routes->get('admin', 'Home::admin', ['filter' => 'auth']);
 
 //Users Routes
-$routes->get('users', 'UserController::index', ['as' => 'admin.users']);
+$routes->get('users', 'UserController::index', ['filter' => 'auth']);
 
 //Alunos Routes
-$routes->get('alunos', 'AlunosController::index', ['as' => 'admin.alunos']);
+$routes->get('alunos', 'AlunosController::index', ['filter' => 'auth']);
 
 //Professores Routes
-$routes->get('professores', 'ProfessoresController::index', ['as' => 'admin.professores']);
+$routes->get('professores', 'ProfessoresController::index', ['filter' => 'auth']);
 
 //Encarregados Routes
-$routes->get('encarregados', 'EncarregadosController::index', ['as' => 'admin.encarregados']);
-/*
-$routes->group('admin',  ['filter' => 'auth'], static function($routes){
+$routes->get('encarregados', 'EncarregadosController::index', ['filter' => 'auth']);
 
-
-});
-*/
+//ROTAS DE CADASTRO
+$routes->post('alunos/cadastro', 'AlunosController::create');
 

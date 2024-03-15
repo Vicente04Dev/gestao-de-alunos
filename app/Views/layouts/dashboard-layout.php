@@ -53,6 +53,28 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>
+<script src="js/jquery.js"></script>
+
+<!-- Código para mostrar o preview da imagem -->
+<script>
+  function previewImagem(){
+    let imagem = document.querySelector('input[name=imagem]').files[0];
+    let preview = document.querySelector('#imagem');
+
+    let reader = new FileReader();
+
+    reader.onloadend = ()=>{
+      preview.src = reader.result;
+    }
+
+    if(imagem){
+      reader.readAsDataURL(imagem);
+    }else{
+      preview.src = "";
+    }
+  }
+
+</script>
 <!-- Bootstrap 4 -->
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="css/bootstrap-5/js/bootstrap.min.js" ></script>

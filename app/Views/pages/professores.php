@@ -89,9 +89,9 @@
                             
                             <div class="col-sm-5 mb-2">
                                 <div class="text-left mb-2">
-                                    <img src="images/wilson.jpg" alt="imagem do professor" width="200" height="150">
+                                    <img src="images/wilson.jpg" alt="imagem do professor" width="200" height="150" id="imagem">
                                 </div>
-                                <input type="file" class="form-control" name="imagem">
+                                <input type="file" class="form-control" name="imagem" onchange="previewImagem()">
                             </div>
                             <div class="mb-2 col-sm-4">
                                 <label for="usuario">Usuário do professor</label>
