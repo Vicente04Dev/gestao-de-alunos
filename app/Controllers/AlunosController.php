@@ -3,15 +3,38 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\AlunosModel;
 use CodeIgniter\HTTP\ResponseInterface;
 
 class AlunosController extends BaseController
 {
-    public function index()
+    public function novo()
     {
         //
-        $data['pageTitle'] = 'Gerenciamento de alunos';
-        return view('pages/alunos', $data);
+        $data['pageTitle'] = 'Cadastrando aluno';
+        return view('pages/alunos/cadastrar', $data);
+    }
+
+    public function listar(){
+
+        $model = model('AlunosModel');
+
+        $data = ['title' => 'Lista de alunos', 'datas' => $model->findAll()];
+        return view('pages/alunos/lista', $data);
+    }
+    public function delete($id = null){
+
+        $model = new AlunosModel();
+
+        $model->delete($id);
+
+        $data = [
+            'title' => "Dados removidos",
+            'text' => "Os dados foram removidos com sucesso!!",
+            'icon' => "success"
+        ];
+
+        return $this->response->setJSON($data);
     }
 
     public function create(){
@@ -72,7 +95,7 @@ class AlunosController extends BaseController
         ];
 
         if(!$this->validateData($data, $rules, $message)){
-            return redirect()->route('alunos')->with('erro_cadastro_aluno', $this->validator->getErrors());
+            return $this->novo();
         }
 
         $post = $this->validator->getValidated();
@@ -93,7 +116,23 @@ class AlunosController extends BaseController
         );
 
         $mensagem = ['title' => 'cadastro com sucesso', 'content' => 'Aluno cadastrado com sucesso'];
-        return view('pages/sucesso', $mensagem);
+        return redirect()->to(base_url('alunos'))
+            ->with('status', 'cadastro com sucesso')
+            ->with('status_text', 'Aluno cadastrado com sucesso')
+            ->with('status_icon', 'success')
+            ->with('status_button', 'OK');
 
+    }
+
+    public function editar($id){
+        
+        $model = model('AlunosModel');
+
+        $data = [
+            'data' => $model->edict($id),
+            'pageTitle' => "Editar dados do aluno"
+        ];
+        
+        return view('pages/alunos/editar', $data);
     }
 }

@@ -11,6 +11,6 @@ class EncarregadosController extends BaseController
     {
         //
         $data['pageTitle'] = 'Gerenciamento de Encarregados de educação';
-        return view('pages/encarregados', $data);
+        return view('pages/encarregados/cadastrar', $data);
     }
 }

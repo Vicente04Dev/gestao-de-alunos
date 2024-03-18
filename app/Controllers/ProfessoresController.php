@@ -11,6 +11,6 @@ class ProfessoresController extends BaseController
     {
         //
         $data['pageTitle'] = 'Gerenciamento de professores';
-        return view('pages/professores', $data);
+        return view('pages/professores/cadastrar', $data);
     }
 }

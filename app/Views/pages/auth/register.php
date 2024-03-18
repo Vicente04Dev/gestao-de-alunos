@@ -16,11 +16,13 @@
                 <?= csrf_field() ?>
                 <?= session()->getFlashdata('erro_cadastro') ?>
                 <?= validation_list_errors() ?>
+
                 <?php if (session()->has('erro_cadastro')): ?>
                     <div class="alert alert-danger" role="alert">
                         <?= session()->getFlashdata('erro_cadastro') ?>
                     </div>
                 <?php endif ?>
+                
                 <div class="wrap-input100 validate-input m-b-26">
                     <span class="label-input100">Email</span>
                     <input class="input100" type="email" name="email" value="<?= set_value('email') ?>"

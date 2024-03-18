@@ -9,7 +9,7 @@ class AlunosModel extends Model
     protected $table            = 'alunos';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'array';
+    protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = ['nome', 'turno', 'curso', 'data_nascimento', 'sala', 'classe','telefone','localizacao', 'obs', 'imagem'];
@@ -39,4 +39,8 @@ class AlunosModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function edict($id){
+        return $this->where(['id' => $id])->first();
+    }
 }

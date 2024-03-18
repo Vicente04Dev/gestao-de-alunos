@@ -11,7 +11,7 @@ class UserController extends BaseController
 
     public function index(){
         $data['pageTitle'] = 'Gerenciamento de usuários';
-        return view('pages/users', $data);
+        return view('pages/users/cadastrar', $data);
     }
     public function store()
     {
