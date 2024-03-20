@@ -27,6 +27,9 @@ $routes->get('admin', 'Home::admin', ['filter' => 'auth']);
 
 //Users Routes
 $routes->get('users', 'UserController::index', ['filter' => 'auth']);
+$routes->get('lista_users', 'UserController::listar', ['filter' => 'auth']);
+$routes->get('apagar_user/(:num)', 'UserController::delete/$1', ['filter' => 'auth']);
+$routes->post('cadastro_users', 'UserController::create', ['filter' => 'auth']);
 
 //Alunos Routes
 $routes->get('alunos', 'AlunosController::novo', ['filter' => 'auth']);
@@ -37,6 +40,9 @@ $routes->post('cadastro_alunos', 'AlunosController::create');
 
 //Professores Routes
 $routes->get('professores', 'ProfessoresController::index', ['filter' => 'auth']);
+$routes->get('professores_lista', 'ProfessoresController::listar', ['filter' => 'auth']);
+$routes->get('apagar_professor/(:num)', 'ProfessoresController::delete/$1', ['filter' => 'auth']);
+$routes->post('cadastro_professor', 'ProfessoresController::create', ['filter' => 'auth']);
 
 //Encarregados Routes
 $routes->get('encarregados', 'EncarregadosController::novo', ['filter' => 'auth']);

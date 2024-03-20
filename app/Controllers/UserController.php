@@ -13,42 +13,72 @@ class UserController extends BaseController
         $data['pageTitle'] = 'Gerenciamento de usuários';
         return view('pages/users/cadastrar', $data);
     }
-    public function store()
+    public function create()
     {
         //
-        $validated = $this->validate(
-            [
-                'email' => 'required|valid_email|is_unique[users.email]',
+        $data = $this->request->getPost(['nome', 'usuario', 'senha', 'confirma_senha', 'papel']);
+
+        $rules = [
+                'usuario' => 'required',
                 'nome' => 'required',
                 'senha' => 'required',
-            ],
-            [
-                'email'=> [
-                    'required' => 'O email é obrigatório!',
-                    'valid_email' => 'digite um email válido!',
-                    'is_unique' => 'Esse endereço de email já está sendo usado'
+                'confirma_senha' => 'required|matches[senha]',
+                'papel' => 'required'
+            ];
+
+        $messages = [
+                'usuario'=> [
+                    'required' => 'O nome de usuário é obrigatório!',
                 ],
                 'senha'=> [
                     'required' => 'A senha é obrigatória!'
                 ],
                 'nome'=> [
                     'required' => 'Seu nome é obrigatório!'
+                ],
+                'confirma_senha' =>[
+                    'required' => 'Confirme a senha',
+                    'matches' => 'As senhas não coincidem.'
                 ]
-            ]
-            );
+            ];
 
-        if(!$validated){
-            return redirect()->route('register')->with('erros', $this->validator->getErrors());
+        if(!$this->validateData($data, $rules, $messages)){
+            return $this->index();
+            
         }
         
+        $post = $this->validator->getValidated();
+
         $user = new UserModel();
-        $inserted = $user->insert($this->request->getPost());
+        $user->insert([
+            'nome' => $post['nome'],
+            'usuario' => str_replace(' ', '-', trim(mb_strtolower($post['usuario']))),
+            'senha' => $post['senha'],
+            'papel' => $post['papel'],
+        ]);
         
-        if($inserted){
-            return redirect()->route('admin');
-        }else{
-            return redirect()->route('register')->with('erro_cadastro', 'Ocorreu um erro ao se cadastrar');
-        }
+        return redirect()->route('admin');
+        
+    }
+
+    public function listar(){
+
+        $model = new UserModel();
+
+        $data = [
+            'pageTitle' => 'Lista de usuários',
+            'datas' => $model->paginate(10),
+            'pager' => $model->pager
+        ];
+
+        return view('pages/users/lista', $data);
+    }
+
+    public function delete($id){
+        $model = new UserModel();
+        $model->delete($id);
+
+        return redirect()->to(base_url('lista_users'));
     }
     public function login(): string
     {

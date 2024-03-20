@@ -109,8 +109,8 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="<?= route_to('professores/lista') ?>"
-                class="nav-link <?= current_url() == base_url('professores/lista') ? 'active' : ''; ?>">
+              <a href="<?= route_to('professores_lista') ?>"
+                class="nav-link <?= current_url() == base_url('professores_lista') ? 'active' : ''; ?>">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Lista dos professores</p>
               </a>
@@ -135,8 +135,8 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="<?= route_to('alunos/lista') ?>"
-                class="nav-link <?= current_url() == base_url('alunos/lista') ? 'active' : ''; ?>">
+              <a href="<?= route_to('lista_users') ?>"
+                class="nav-link <?= current_url() == base_url('lista_users') ? 'active' : ''; ?>">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Lista de usuários</p>
               </a>

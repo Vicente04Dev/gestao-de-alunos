@@ -4,15 +4,15 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class UserModel extends Model
+class ProfessoresModel extends Model
 {
-    protected $table            = 'users';
+    protected $table            = 'professores';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nome', 'usuario', 'senha', 'papel'];
+    protected $allowedFields    = ['nome', 'data_nascimento', 'telefone', 'localizacao', 'obs', 'nivel_academico', 'user_id'];
 
     protected bool $allowEmptyInserts = false;
 
@@ -39,25 +39,4 @@ class UserModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
-
-    protected function encrytSenha($args){
-        
-        //$args['data']['senha'] = password_hash($args['data']['senha'], PASSWORD_DEFAULT);
-        $encrypt = \Config\Services::encrypter();
-
-        $args['data']['senha'] = $encrypt->encrypt($args['data']['senha']);
-
-        return $args;
-    }
-    
-    protected function dencrytSenha($args){
-        
-        $encrypt = \Config\Services::encrypter();
-
-        //echo md5($args['data']['senha']);
-        
-        $args['data']['senha'] = $encrypt->decrypt($args['data']['senha']);
-
-        return $args;
-    }
 }

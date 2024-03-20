@@ -108,6 +108,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
           icon: "<?= session()->getFlashdata('status_icon') ?>",
           button: "<?= session()->getFlashdata('status_button') ?>",
         })
+      <?php elseif (session()->getFlashdata('type') == "cadastro_professor"): ?>
+        swal({
+          title: "<?= session()->getFlashdata('status') ?>",
+          text: "<?= session()->getFlashdata('status_text') ?>",
+          icon: "<?= session()->getFlashdata('status_icon') ?>",
+          button: "<?= session()->getFlashdata('status_button') ?>",
+        })
       <?php endif ?>
     })
     function previewImagem() {

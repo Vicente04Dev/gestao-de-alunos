@@ -1,1 +1,1 @@
-__ci_last_regenerate|i:1710947527;csrf_test_name|s:32:"b9049c9178162adea864eced25bc95e6";_ci_previous_url|s:34:"http://localhost:8080/lista_alunos";user|a:3:{s:4:"nome";s:14:"Wilson Vicente";s:5:"email";s:28:"wilsonvicentelucas@gmail.com";s:5:"senha";s:6:"Wilson";}
+__ci_last_regenerate|i:1710947527;csrf_test_name|s:32:"5fc6aeb9580369ab8061a674d3a995bf";_ci_previous_url|s:37:"http://localhost:8080/cadastro_alunos";user|a:3:{s:4:"nome";s:14:"Wilson Vicente";s:5:"email";s:28:"wilsonvicentelucas@gmail.com";s:5:"senha";s:6:"Wilson";}

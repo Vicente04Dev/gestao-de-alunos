@@ -5,24 +5,12 @@
 <!-- Content Header (Page header) -->
 <div class="content-header">
     <div class="container-fluid">
-        <div class="row mb-2 g-2">
+        <div class="row">
             <div class="col-sm-6">
                 <h2>
-                    <?= esc(isset($pageTitle) ? $pageTitle : 'Alunos'); ?>
+                    <?= esc($pageTitle) ?? 'Alunos'; ?>
                 </h2>
             </div>
-            <div class="col-sm-6">
-                <ul class="breadcrumb float-md-right">
-                    <li><a href="#" class="btn btn-success btn-sm mr-2 mb-1" data-bs-toggle="modal"
-                            data-bs-target="#modal_novo_usuario">Addicionar usuário</a></li>
-                    <li>
-                        <a href="#" class="btn btn-success btn-sm mr-2">Exportar</a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn btn-success btn-sm">Exportar</a>
-                    </li>
-                </ul>
-            </div><!-- /.col -->
         </div><!-- /.row -->
     </div><!-- /.container-fluid -->
 </div>
@@ -32,46 +20,48 @@
 
 <div class="container">
     <!-- Modal -->
-    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="modal_novo_usuario" tabindex="-1"
-        aria-labelledby="titulo" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="titulo">Cadastrando novo usuário</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="row mb-3">
+    <div class="bg-white p-3 mb-3 mt-3 border rounded">
+        <?php if (validation_list_errors()): ?>
+            <div class="text-danger">
+                <?= validation_list_errors() ?? '' ?>
+            </div>
+        <?php endif ?>
 
-                            <div class="mb-1 col-sm-3">
-                                <label for="nome">Nome</label>
-                                <input type="text" class="form-control" name="nome" id="nome" placeholder="nome do usuário">
-                            </div>
-                            <div class="mb-1 col-sm-3">
-                                <label for="nome">Nome de usuário</label>
-                                <input type="text" class="form-control" name="nome" id="nome" placeholder="nome de acesso">
-                            </div>
-                            <div class="mb-1 col-sm-3">
-                                <label for="senha">Senha</label>
-                                <input type="password" class="form-control" name="senha" id="senha" placeholder="senha de acesso">
-                            </div>
-                            <div class="mb-1 col-sm-3">
-                                <label for="papel">Papel</label>
-                                <select class="form-select" id="papel" name="papel">
-                                    <option value="2">Professor</option>
-                                    <option value="1">Administrador</option>
-                                </select>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-md">Cadastrar usuário</button>
-                        <button type="button" class="btn btn-danger btn-md" data-bs-dismiss="modal">Sair</button>
-                    </form>
-                </div>
+        <?= form_open('cadastro_users') ?>
+        <?= csrf_field(); ?>
+
+        <div class="row mb-3">
+
+            <div class="mb-1 col-sm-6">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" name="nome" id="nome" placeholder="nome do usuário" value="<?= set_value('nome')?>">
+            </div>
+            <div class="mb-1 col-sm-6">
+                <label for="usuario">Nome de usuário</label>
+                <input type="text" class="form-control" name="usuario" id="usuario" placeholder="nome de acesso" value="<?= set_value('usuario')?>">
             </div>
         </div>
+        <div class="row mb-3">
+            <div class="mb-1 col-sm-4">
+                <label for="senha">Senha</label>
+                <input type="password" class="form-control" name="senha" id="senha" placeholder="senha de acesso" value="<?= set_value('senha')?>">
+            </div>
+            <div class="mb-1 col-sm-4">
+                <label for="confirma_senha">Confirmar senha</label>
+                <input type="password" class="form-control" name="confirma_senha" id="confirma_senha" placeholder="confirme a senha de acesso" value="<?= set_value('confirma_senha')?>">
+            </div>
+            <div class="mb-1 col-sm-4">
+                <label for="papel">Papel</label>
+                <select class="form-select" id="papel" name="papel">
+                    <option value="professor">Professor</option>
+                    <option value="adm">Administrador</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-md">Cadastrar usuário</button>
+        <button type="button" class="btn btn-danger btn-md" data-bs-dismiss="modal">Sair</button>
+        <?= form_close() ?>
     </div>
-
 </div>
 <!-- /.Tabela de usuários -->
 

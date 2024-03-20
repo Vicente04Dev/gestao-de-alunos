@@ -29,7 +29,9 @@ class AlunosController extends BaseController
 
         $query = "SELECT alunos.nome, alunos.classe, alunos.turno, alunos.telefone,
         alunos.sala, encarregados.nome FROM alunos LEFT JOIN encarregados ON alunos.encarregado_id = encarregados.id";
+        $quer2 = 'id, nome, classe, turno, telefone, sala';
 
+    
         $data = ['title' => 'Lista de alunos', 'datas' => $model->paginate(10), 'pager' => $model->pager];
         return view('pages/alunos/lista', $data);
     }
@@ -83,7 +85,7 @@ class AlunosController extends BaseController
             'curso' => 'required',
             'classe' => 'required',
             'data_nascimento' => 'required',
-            'obs' => 'min_length[8]',
+            'obs' => 'max_length[500]',
             'sala' => 'required',
             'localizacao' => 'required',
             'telefone' => 'is_unique[alunos.telefone]',
@@ -105,13 +107,13 @@ class AlunosController extends BaseController
                 'required' => 'escolha o curso'
             ],
             'data_nascimento' => [
-                'required' => 'selecione uma data de nascimento do aluno'
+                'required' => 'selecione uma data de nascimento do aluno.'
             ],
             'obs' => [
-                'min_length' => 'o conteúdo deve ter no mínimo 8 letras'
+                'max_length' => 'o conteúdo excedeu o limite de 500 letras.'
             ],
             'classe' => [
-                'required' => 'selecione a classe do aluno'
+                'required' => 'selecione a classe do aluno.'
             ],
             'sala' => [
                 'required' => 'digite a sala do aluno'
