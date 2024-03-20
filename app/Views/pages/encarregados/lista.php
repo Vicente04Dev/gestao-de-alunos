@@ -19,12 +19,11 @@
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Nome</th>
-                <th scope="col">Classe</th>
-                <th scope="col">Turno</th>
                 <th scope="col">Telefone</th>
-                <th scope="col">Sala</th>
-                <th scope="col">Encarregado</th>
-                <th scope="col">Ação</th>
+                <th scope="col">Localização</th>
+                <th scope="col">Profissão</th>
+                <th scope="col">Data de nascimento</th>
+                <th scope="col">Acção</th>
             </tr>
         </thead>
         <tbody>
@@ -37,23 +36,20 @@
                         <?= $value->nome ?>
                     </td>
                     <td>
-                        <?= $value->classe ?>
-                    </td>
-                    <td>
-                        <?= $value->turno ?>
-                    </td>
-                    <td>
                         <?= $value->telefone ?>
                     </td>
                     <td>
-                        <?= $value->sala ?>
+                        <?= $value->localizacao ?>
                     </td>
                     <td>
-                        <?= $value->sala ?>
+                        <?= $value->profissao ?>
+                    </td>
+                    <td>
+                        <?= $value->data_nascimento ?>
                     </td>
                     <td>  
-                        <a href="aluno_editar/<?= $value->id ?>" class="btn btn-primary btn-sm">Editar</a>
-                        <a href="aluno/apagar/<?= $value->id ?>" class="btn btn-danger btn-sm" value="<?= $value->id ?>" >Excluir</a>
+                        <a href="editar_encarregado/<?= $value->id ?>" class="btn btn-primary btn-sm">Editar</a>
+                        <a href="apagar_encarregado/<?= $value->id ?>" class="btn btn-danger btn-sm" value="<?= $value->id ?>" >Excluir</a>
                     </td>
                 </tr>
             <?php endforeach ?>

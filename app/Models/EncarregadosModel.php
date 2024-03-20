@@ -4,15 +4,15 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class AlunosModel extends Model
+class EncarregadosModel extends Model
 {
-    protected $table            = 'alunos';
+    protected $table            = 'encarregados';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nome', 'turno', 'curso', 'data_nascimento', 'sala', 'classe','telefone','localizacao', 'obs', 'encarregado_id'];
+    protected $allowedFields    = ['nome', 'data_nascimento', 'profissao', 'telefone', 'localizacao', 'obs'];
 
     protected bool $allowEmptyInserts = false;
 
@@ -39,12 +39,4 @@ class AlunosModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
-
-    public function edict($id){
-        return $this->where(['id' => $id])->first();
-    }
-
-    public function getImage($id){
-        return $this->select('imagem')->where(['id' => $id]);
-    }
 }

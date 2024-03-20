@@ -66,7 +66,42 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <script>
 
     $(document).ready(() => {
-      <?php if (session()->getFlashdata('status')): ?>
+      <?php if (session()->getFlashdata('type') == "cadastro_aluno"): ?>
+        swal({
+          title: "<?= session()->getFlashdata('status') ?>",
+          text: "<?= session()->getFlashdata('status_text') ?>",
+          icon: "<?= session()->getFlashdata('status_icon') ?>",
+          button: "<?= session()->getFlashdata('status_button') ?>",
+        })
+      <?php elseif (session()->getFlashdata('type') == "exclusao_aluno"): ?>
+        swal({
+          title: "<?= session()->getFlashdata('status') ?>",
+          text: "<?= session()->getFlashdata('status_text') ?>",
+          icon: "<?= session()->getFlashdata('status_icon') ?>",
+          button: "<?= session()->getFlashdata('status_button') ?>",
+        })
+      <?php elseif (session()->getFlashdata('type') == "falha_exclusao_aluno"): ?>
+        swal({
+          title: "<?= session()->getFlashdata('status') ?>",
+          text: "<?= session()->getFlashdata('status_text') ?>",
+          icon: "<?= session()->getFlashdata('status_icon') ?>",
+          button: "<?= session()->getFlashdata('status_button') ?>",
+        })
+      <?php elseif (session()->getFlashdata('type') == "cadastro_encarregado"): ?>
+        swal({
+          title: "<?= session()->getFlashdata('status') ?>",
+          text: "<?= session()->getFlashdata('status_text') ?>",
+          icon: "<?= session()->getFlashdata('status_icon') ?>",
+          button: "<?= session()->getFlashdata('status_button') ?>",
+        })
+      <?php elseif (session()->getFlashdata('type') == "falha_exclusao_encarregado"): ?>
+        swal({
+          title: "<?= session()->getFlashdata('status') ?>",
+          text: "<?= session()->getFlashdata('status_text') ?>",
+          icon: "<?= session()->getFlashdata('status_icon') ?>",
+          button: "<?= session()->getFlashdata('status_button') ?>",
+        })
+      <?php elseif (session()->getFlashdata('type') == "exclusao_encarregado"): ?>
         swal({
           title: "<?= session()->getFlashdata('status') ?>",
           text: "<?= session()->getFlashdata('status_text') ?>",
@@ -74,44 +109,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           button: "<?= session()->getFlashdata('status_button') ?>",
         })
       <?php endif ?>
-
-      $('.delete').click((e) => {
-        e.preventDefault();
-
-        console.log($(this).get().values());
-
-        let id = $(this).val();
-
-        console.log('id: '+id)
-
-        swal({
-          title: "Ten certeza que quer apagar esses dados?",
-          text: "Uma vez pagados, os dados não podereão ser recuperados!",
-          icon: 'warning',
-          buttons: true,
-          dangerMode: true,
-        }).then((apagar) => {
-          if(apagar) {
-            $.ajax({
-              url: '/aluno/apagar/' + id,
-              success: function (response) {
-                swal({
-                  title: response.title,
-                  text: response.text,
-                  icon: response.icon,
-                  button: 'OK',
-                }).then((apagado) => {
-                  window.location.reload();
-                });
-              }
-            });
-          } else {
-            console.log('Olá mundo!!')
-          }
-        })
-      })
     })
-
     function previewImagem() {
       let imagem = document.querySelector('input[name=imagem]').files[0];
       let preview = document.querySelector('#imagem');

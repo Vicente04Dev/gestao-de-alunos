@@ -23,7 +23,7 @@
             </div>
         <?php endif ?>
 
-        <?= form_open('cadastro_alunos', ['enctype' => 'multipart/form-data']) ?>
+        <?= form_open('cadastro_alunos') ?>
         <?= csrf_field(); ?>
 
         <div class="row">
@@ -107,7 +107,7 @@
         </div>
 
         <div class="row">
-            <div class="mb-1 col-sm-5">
+            <div class="mb-1 col-sm-4">
                 <label for="localizacao">Localização</label>
                 <input type="text" class="form-control" id="localizacao" name="localizacao"
                     placeholder="localização do aluno" value="<?= set_value('localizacao') ?>">
@@ -115,7 +115,18 @@
                     <?= session()->getFlashdata('erro_cadastro_aluno')['localizacao'] ?? '' ?>
                 </span>
             </div>
-            <div class="mb-3 col-sm-7">
+            <div class="mb-1 col-sm-4">
+                <label for="encarregado">Encarregado</label>
+                <select class="form-select" id="encarregado" aria-label="Floating label select example" name="encarregado">
+                    <?php foreach($encarregados as $nomes): ?>
+                        <option value="<?= $nomes->id ?>"><?= $nomes->nome ?></option>
+                    <?php endforeach ?>
+                </select>
+                <span class="text text-danger">
+                    <?= session()->getFlashdata('erro_cadastro_aluno')['curso'] ?? '' ?>
+                </span>
+            </div>
+            <div class="mb-3 col-sm-4">
                 <label for="obs">Observações</label>
                 <textarea class="form-control" name="obs" id="obs"
                     placeholder="notas sobre o aluno (opcional)"><?= set_value('obs') ?></textarea>
@@ -123,15 +134,6 @@
                     <?= session()->getFlashdata('erro_cadastro_aluno')['obs'] ?? '' ?>
                 </span>
             </div>
-
-            <div class="col-sm-5 mb-2">
-                <label for="foto">Foto do aluno</label>
-                <div class="text-left mb-2">
-                    <img src="images/wilson.jpg" alt="" width="200" height="150" id="imagem">
-                </div>
-                <input type="file" class="form-control" name="imagem" onchange="previewImagem()">
-            </div>
-
         </div>
 
 

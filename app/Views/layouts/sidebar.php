@@ -83,8 +83,8 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="<?= route_to('encarregados/lista') ?>"
-                class="nav-link <?= current_url() == base_url('encarregados/lista') ? 'active' : ''; ?>">
+              <a href="<?= route_to('lista_encarregados') ?>"
+                class="nav-link <?= current_url() == base_url('lista_encarregados') ? 'active' : ''; ?>">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Lista dos encarregados</p>
               </a>

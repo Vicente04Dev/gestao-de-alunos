@@ -32,15 +32,18 @@ $routes->get('users', 'UserController::index', ['filter' => 'auth']);
 $routes->get('alunos', 'AlunosController::novo', ['filter' => 'auth']);
 $routes->get('aluno/apagar/(:num)', 'AlunosController::delete/$1', ['filter' => 'auth']);
 $routes->get('lista_alunos', 'AlunosController::listar', ['filter' => 'auth']);
-$routes->get('editar_aluno/(:num)', 'AlunosController::editar/$1', ['filter' => 'auth']);
-
+$routes->get('aluno_editar/(:num)', 'AlunosController::editar/$1', ['filter' => 'auth']);
 $routes->post('cadastro_alunos', 'AlunosController::create');
 
 //Professores Routes
 $routes->get('professores', 'ProfessoresController::index', ['filter' => 'auth']);
 
 //Encarregados Routes
-$routes->get('encarregados', 'EncarregadosController::index', ['filter' => 'auth']);
+$routes->get('encarregados', 'EncarregadosController::novo', ['filter' => 'auth']);
+$routes->get('lista_encarregados', 'EncarregadosController::listar', ['filter' => 'auth']);
+$routes->get('editar_encarregado/(:num)', 'EncarregadosController::editar/$1', ['filter' => 'auth']);
+$routes->get('apagar_encarregado/(:num)', 'EncarregadosController::delete/$1', ['filter' => 'auth']);
+$routes->post('cadastro_encarregado', 'EncarregadosController::create', ['filter' => 'auth']);
 
 //ROTAS DE CADASTRO
 

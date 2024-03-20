@@ -4,6 +4,8 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\AlunosModel;
+use App\Models\EncarregadosModel;
+use CodeIgniter\Database\Exceptions\DatabaseException;
 use CodeIgniter\HTTP\ResponseInterface;
 
 class AlunosController extends BaseController
@@ -11,7 +13,13 @@ class AlunosController extends BaseController
     public function novo()
     {
         //
-        $data['pageTitle'] = 'Cadastrando aluno';
+        $encarregadosModel = new EncarregadosModel();
+
+        $data = [
+            'pageTitle' => 'Cadastrando aluno',
+            'encarregados' => $encarregadosModel->select('id, nome')->findAll()
+        ];
+
         return view('pages/alunos/cadastrar', $data);
     }
 
@@ -19,22 +27,39 @@ class AlunosController extends BaseController
 
         $model = model('AlunosModel');
 
-        $data = ['title' => 'Lista de alunos', 'datas' => $model->findAll()];
+        $query = "SELECT alunos.nome, alunos.classe, alunos.turno, alunos.telefone,
+        alunos.sala, encarregados.nome FROM alunos LEFT JOIN encarregados ON alunos.encarregado_id = encarregados.id";
+
+        $data = ['title' => 'Lista de alunos', 'datas' => $model->paginate(10), 'pager' => $model->pager];
         return view('pages/alunos/lista', $data);
     }
     public function delete($id = null){
 
         $model = new AlunosModel();
 
-        $model->delete($id);
+        try {
+            $image = $model->select('imagem')->where(['id' => $id])->asObject();
 
-        $data = [
-            'title' => "Dados removidos",
-            'text' => "Os dados foram removidos com sucesso!!",
-            'icon' => "success"
-        ];
+            $model->delete($id);
+            unlink('uploads/imagens_alunos/'. $image->imagem);
+        } catch (DatabaseException $th) {
+            //throw $th;
+            return redirect()->to(base_url('lista_alunos'))
+            ->with('type', 'falha_exclusao_aluno')
+            ->with('status', 'Impossível excluir')
+            ->with('status_text', 'O aluno que deseja excluir está associado a um encarregado de educação. Remova primeira a associação com o encarregado e volta a excluir.')
+            ->with('status_icon', 'error')
+            ->with('status_button', 'OK');
+        }
 
-        return $this->response->setJSON($data);
+        
+
+        return redirect()->to(base_url('lista_alunos'))
+            ->with('type', 'exclusao_aluno')
+            ->with('status', 'Excluído com sucesso')
+            ->with('status_text', 'Aluno excluído com sucesso.')
+            ->with('status_icon', 'success')
+            ->with('status_button', 'OK');
     }
 
     public function create(){
@@ -43,13 +68,14 @@ class AlunosController extends BaseController
         $file = $this->request->getFile('imagem');
 
         //Verifica se a imagem é um arquivo válido e se já não foi movida
+        /*
         if($file->isValid() AND !$file->hasMoved()){
 
             $fileName = $file->getRandomName(); //Nome aleatório para a imagem
             $file->move('uploads/imagens_alunos/', $fileName);
         }
-
-        $data = $this->request->getPost(['nome', 'turno', 'curso', 'classe', 'telefone','data_nascimento', 'sala', 'localizacao', 'obs']);
+        */
+        $data = $this->request->getPost(['nome', 'turno', 'curso', 'classe', 'telefone','data_nascimento', 'encarregado', 'sala', 'localizacao', 'obs']);
 
         $rules = [
             'nome' => 'required|max_length[255]',
@@ -61,12 +87,16 @@ class AlunosController extends BaseController
             'sala' => 'required',
             'localizacao' => 'required',
             'telefone' => 'is_unique[alunos.telefone]',
+            'encarregado' => 'required'
         ];
 
         $message = [
             'nome' => [
                 'required' => 'o nome do aluno é obrigatório',
                 'max_length' => 'o tamnho máximo são 255 letras',
+            ],
+            'encarregado' => [
+                'required' => 'escolha um encarregado'
             ],
             'turno' => [
                 'required' => 'escolha o turno'
@@ -109,14 +139,14 @@ class AlunosController extends BaseController
             'sala' => $post['sala'],
             'curso' => $post['curso'],
             'localizacao' => $post['localizacao'],
-            'imagem' => $fileName,
             'telefone' => $post['telefone'],
+            'encarregado_id' => $post['encarregado'],
             'obs' => $post['obs'],
             ]
         );
 
-        $mensagem = ['title' => 'cadastro com sucesso', 'content' => 'Aluno cadastrado com sucesso'];
         return redirect()->to(base_url('alunos'))
+            ->with('type', 'cadastro_aluno')
             ->with('status', 'cadastro com sucesso')
             ->with('status_text', 'Aluno cadastrado com sucesso')
             ->with('status_icon', 'success')

@@ -42,16 +42,9 @@
 
 <div class="container">
     <!-- Modal -->
-    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="modal_novo_professor" tabindex="-1"
-        aria-labelledby="titulo" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="titulo">Cadastrando professor</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
+    
+        <div>
+            <form>
 
                         <div class="row">
 
@@ -86,13 +79,6 @@
                                 <textarea class="form-control" name="obs" id="obs"
                                 placeholder="notas sobre o professor (opcional)" cols="30" ></textarea>
                             </div>
-                            
-                            <div class="col-sm-5 mb-2">
-                                <div class="text-left mb-2">
-                                    <img src="images/wilson.jpg" alt="imagem do professor" width="200" height="150" id="imagem">
-                                </div>
-                                <input type="file" class="form-control" name="imagem" onchange="previewImagem()">
-                            </div>
                             <div class="mb-2 col-sm-4">
                                 <label for="usuario">Usuário do professor</label>
                                 <select class="form-select" id="turno" name="usuario">
@@ -105,10 +91,8 @@
                         </div>
                         <button type="submit" class="btn btn-primary btn-md">Cadastrar professor</button>
                         <button type="button" class="btn btn-danger btn-md" data-bs-dismiss="modal">Sair</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+            </form>
+        </div>      
     </div>
 
     <!-- /.Modal -->
