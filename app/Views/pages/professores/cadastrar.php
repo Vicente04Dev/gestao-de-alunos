@@ -63,7 +63,7 @@
             </div>
             <div class="mb-2 col-sm-4">
                 <label for="usuario">Usuário do professor</label>
-                <select class="form-select" id="usuario" name="usuario">
+                <select class="form-select form-select" id="usuario" name="usuario">
                     <?php foreach($usuarios as $nomes): ?>
                         <option value="<?= $nomes->id ?>"><?= $nomes->nome ?></option>
                     <?php endforeach ?>

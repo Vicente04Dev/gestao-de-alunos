@@ -95,13 +95,12 @@ class UserController extends BaseController
         helper('form');
         $validated = $this->validate(
             [
-                'email' => 'required|valid_email',
+                'usuario' => 'required',
                 'senha' => 'required',
             ],
             [
-                'email'=> [
-                    'required' => 'O email é obrigatório!',
-                    'valid_email' => 'digite um email válido!',
+                'usuario'=> [
+                    'required' => 'Digite seu nome de usuário!',
                 ],
                 'senha'=> [
                     'required' => 'A senha é obrigatória!'
@@ -115,17 +114,17 @@ class UserController extends BaseController
 
         $user = new UserModel();
        // $inserted = $user->insert($this->request->getPost());
-       $email = $this->request->getPost('email');
+       $usuario = $this->request->getPost('usuario');
        $senha = $this->request->getPost('senha');
 
-       $userFound = $user->select('nome, email, senha')->where(['email' => $email, 'senha'=> $senha])->first();
+       $userFound = $user->select('nome, usuario, senha')->where(['usuario' => $usuario, 'senha'=> $senha])->first();
         
        if(!$userFound){
-           return redirect()->route('login')->with("erro_login", "Email ou senha incorrecto");
+           return redirect()->route('login')->with("erro_login", "Usuário ou senha incorrecto");
         }
         
         session()->set('user', $userFound);
-        unset($userFound['senha']);
+        unset($userFound->senha);
 
         return redirect()->route('admin');
         

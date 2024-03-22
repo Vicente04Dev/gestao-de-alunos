@@ -17,7 +17,7 @@
       <div class="info">
         <a href="/" class="d-block">
           <?php if (session()->has('user')): ?>
-            <?= session()->get('user')['nome']; ?>
+            <?= session()->get('user')->nome; ?>
           <?php endif ?>
         </a>
       </div>

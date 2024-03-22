@@ -22,9 +22,8 @@
                     </div>
                 <?php endif ?>
                 <div class="wrap-input100 validate-input m-b-26">
-                    <span class="label-input100">Email</span>
-                    <input class="input100" type="email" name="email" value="<?= set_value('email') ?>"
-                        placeholder="digite seu email">
+                    <span class="label-input100">Usuário</span>
+                    <input class="input100" type="text" name="usuario" value="<?= set_value('usuario') ?>" placeholder="digite seu nome de usuario">
                     <span class="focus-input100"></span>
                 </div>
 

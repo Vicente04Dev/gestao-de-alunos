@@ -30,17 +30,17 @@
 
                 <div class="mb-1 col-sm-4">
                     <label for="nome">Nome do encarregado</label>
-                    <input type="text" class="form-control" id="nome" name="nome" placeholder="nome do encarregado" value="<?= set_value('nome') ?>" >
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="nome do encarregado" value="<?= $data->nome ?>" >
                 </div>
 
                 <div class="mb-1 col-sm-4">
                     <label for="data_nascimento">Data de nascimento</label>
-                    <input type="date" class="form-control" name="data_nascimento" id="data_nascimento" value="<?= set_value('data_nascimento') ?>">
+                    <input type="date" class="form-control" name="data_nascimento" id="data_nascimento" value="<?= $data->data_nascimento ?>">
                 </div>
                 <div class="mb-1 col-sm-4">
                     <label for="profissao">Profissão</label>
                     <input type="text" class="form-control" name="profissao" id="profissao"
-                        placeholder="profissão do encarregado" value="<?= set_value('profissao') ?>">
+                        placeholder="profissão do encarregado" value="<?= $data->profissao ?>">
                 </div>
             </div>
 
@@ -48,20 +48,20 @@
                 <div class="mb-1 col-sm-4">
                     <label for="telefone">Telefone</label>
                     <input type="text" class="form-control" name="telefone" id="telefone"
-                        placeholder="nº de telefone do encarregado" value="<?= set_value('telefone') ?>">
+                        placeholder="nº de telefone do encarregado" value="<?= $data->telefone; ?>">
                 </div>
                 <div class="mb-1 col-sm-4">
                     <label for="localizacao">Localização</label>
                     <input type="text" class="form-control" name="localizacao" id="localizacao"
-                        placeholder="onde o encarregado mora?" value="<?= set_value('localizao') ?>">
+                        placeholder="onde o encarregado mora?" value="<?= $data->localizacao ?>">
                 </div>
                 <div class="mb-3 col-sm-4">
                     <label for="obs">Observações</label>
                     <textarea class="form-control" name="obs" id="obs"
-                        placeholder="notas sobre o encarregado (opcional)" cols="30"><?= set_value('obs') ?></textarea>
+                        placeholder="notas sobre o encarregado (opcional)" cols="30"><?= $data->obs ?></textarea>
                 </div>
             </div>
-            <button type="submit" class="btn btn-success btn-md">Cadastrar encarregado</button>
+            <button type="submit" class="btn btn-success btn-md">Actualizar</button>
             <button class="btn btn-primary btn-md">Novo cadastro</button>
         <?= form_close() ?>
 
