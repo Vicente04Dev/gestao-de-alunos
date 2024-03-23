@@ -1,0 +1,565 @@
+INFO - 2024-03-23 05:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 05:59:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 05:59:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 05:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 05:59:34 --> CSRF token verified.
+INFO - 2024-03-23 05:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 05:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 05:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 05:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 06:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 06:00:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 06:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 06:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:06:21 --> CSRF token verified.
+INFO - 2024-03-23 13:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-23 13:13:57 --> ErrorException: Undefined property: stdClass::$id
+in APPPATH\Views\pages\alunos\lista.php on line 34.
+ 1 APPPATH\Views\pages\alunos\lista.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\projects\\gestao-de-alunos\\app\\Views\\pages\\alunos\\lista.php', 34)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\projects\\gestao-de-alunos\\app\\Views\\pages\\alunos\\lista.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/alunos/lista', [], true)
+ 5 APPPATH\Controllers\AlunosController.php(36): view('pages/alunos/lista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-23 13:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-23 13:14:26 --> Error: Call to a member function links() on null
+in APPPATH\Views\pages\alunos\lista.php on line 62.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/alunos/lista', [], true)
+ 4 APPPATH\Controllers\AlunosController.php(36): view('pages/alunos/lista', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-23 13:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-23 13:14:53 --> Error: Call to a member function paginate() on array
+in APPPATH\Controllers\AlunosController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-23 13:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:17:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:18:13 --> CSRF token verified.
+INFO - 2024-03-23 13:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:20:01 --> CSRF token verified.
+ERROR - 2024-03-23 13:20:01 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gestao`.`alunos`, CONSTRAINT `aluno_encarregado` FOREIGN KEY (`encarregado_id`) REFERENCES `encarregados` (`id`)) in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `al...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `al...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `al...')
+#3 C:\projects\gestao-de-alunos\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `al...', Array, false)
+#4 C:\projects\gestao-de-alunos\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\projects\gestao-de-alunos\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\projects\gestao-de-alunos\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\projects\gestao-de-alunos\app\Controllers\AlunosController.php(146): CodeIgniter\Model->insert(Array)
+#8 C:\projects\gestao-de-alunos\system\CodeIgniter.php(941): App\Controllers\AlunosController->create()
+#9 C:\projects\gestao-de-alunos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+#10 C:\projects\gestao-de-alunos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\projects\gestao-de-alunos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\projects\gestao-de-alunos\system\Commands\Server\rewrite.php(47): require_once('C:\\projects\\ges...')
+#13 {main}
+CRITICAL - 2024-03-23 13:20:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`gestao`.`alunos`, CONSTRAINT `aluno_encarregado` FOREIGN KEY (`encarregado_id`) REFERENCES `encarregados` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (:nome:, :data_nascimento:, :classe:, :turno:, :sala:, :curso:, :localizacao:, :telefone:, :encarregado_id:, :obs:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AlunosController.php(146): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+CRITICAL - 2024-03-23 13:20:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`gestao`.`alunos`, CONSTRAINT `aluno_encarregado` FOREIGN KEY (`encarregado_id`) REFERENCES `encarregados` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (\'Fiston Dumba dos Santos\', \'2024-03-20\', \'8ª classe\', \'Manhã\', \'8\', \'C.H\', \'Ramiros\', \'9999999999\', \'\', \'\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (\'Fiston Dumba dos Santos\', \'2024-03-20\', \'8ª classe\', \'Manhã\', \'8\', \'C.H\', \'Ramiros\', \'9999999999\', \'\', \'\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (:nome:, :data_nascimento:, :classe:, :turno:, :sala:, :curso:, :localizacao:, :telefone:, :encarregado_id:, :obs:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\AlunosController.php(146): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+CRITICAL - 2024-03-23 13:20:01 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gestao`.`alunos`, CONSTRAINT `aluno_encarregado` FOREIGN KEY (`encarregado_id`) REFERENCES `encarregados` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (\'Fiston Dumba dos Santos\', \'2024-03-20\', \'8ª classe\', \'Manhã\', \'8\', \'C.H\', \'Ramiros\', \'9999999999\', \'\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (\'Fiston Dumba dos Santos\', \'2024-03-20\', \'8ª classe\', \'Manhã\', \'8\', \'C.H\', \'Ramiros\', \'9999999999\', \'\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (\'Fiston Dumba dos Santos\', \'2024-03-20\', \'8ª classe\', \'Manhã\', \'8\', \'C.H\', \'Ramiros\', \'9999999999\', \'\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (:nome:, :data_nascimento:, :classe:, :turno:, :sala:, :curso:, :localizacao:, :telefone:, :encarregado_id:, :obs:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AlunosController.php(146): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->create()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-23 13:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:21:33 --> CSRF token verified.
+ERROR - 2024-03-23 13:21:33 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gestao`.`alunos`, CONSTRAINT `aluno_encarregado` FOREIGN KEY (`encarregado_id`) REFERENCES `encarregados` (`id`)) in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `al...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `al...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `al...')
+#3 C:\projects\gestao-de-alunos\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `al...', Array, false)
+#4 C:\projects\gestao-de-alunos\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\projects\gestao-de-alunos\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\projects\gestao-de-alunos\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\projects\gestao-de-alunos\app\Controllers\AlunosController.php(146): CodeIgniter\Model->insert(Array)
+#8 C:\projects\gestao-de-alunos\system\CodeIgniter.php(941): App\Controllers\AlunosController->create()
+#9 C:\projects\gestao-de-alunos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+#10 C:\projects\gestao-de-alunos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\projects\gestao-de-alunos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\projects\gestao-de-alunos\system\Commands\Server\rewrite.php(47): require_once('C:\\projects\\ges...')
+#13 {main}
+CRITICAL - 2024-03-23 13:21:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`gestao`.`alunos`, CONSTRAINT `aluno_encarregado` FOREIGN KEY (`encarregado_id`) REFERENCES `encarregados` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (:nome:, :data_nascimento:, :classe:, :turno:, :sala:, :curso:, :localizacao:, :telefone:, :encarregado_id:, :obs:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AlunosController.php(146): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+CRITICAL - 2024-03-23 13:21:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`gestao`.`alunos`, CONSTRAINT `aluno_encarregado` FOREIGN KEY (`encarregado_id`) REFERENCES `encarregados` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (\'Fiston Dumba dos Santos\', \'2024-03-19\', \'10ª classe\', \'Manhã\', \'10\', \'C.H\', \'Ramiros\', \'9999999999\', \'0\', \'\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (\'Fiston Dumba dos Santos\', \'2024-03-19\', \'10ª classe\', \'Manhã\', \'10\', \'C.H\', \'Ramiros\', \'9999999999\', \'0\', \'\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (:nome:, :data_nascimento:, :classe:, :turno:, :sala:, :curso:, :localizacao:, :telefone:, :encarregado_id:, :obs:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\AlunosController.php(146): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+CRITICAL - 2024-03-23 13:21:33 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gestao`.`alunos`, CONSTRAINT `aluno_encarregado` FOREIGN KEY (`encarregado_id`) REFERENCES `encarregados` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (\'Fiston Dumba dos Santos\', \'2024-03-19\', \'10ª classe\', \'Manhã\', \'10\', \'C.H\', \'Ramiros\', \'9999999999\', \'0\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (\'Fiston Dumba dos Santos\', \'2024-03-19\', \'10ª classe\', \'Manhã\', \'10\', \'C.H\', \'Ramiros\', \'9999999999\', \'0\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (\'Fiston Dumba dos Santos\', \'2024-03-19\', \'10ª classe\', \'Manhã\', \'10\', \'C.H\', \'Ramiros\', \'9999999999\', \'0\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (:nome:, :data_nascimento:, :classe:, :turno:, :sala:, :curso:, :localizacao:, :telefone:, :encarregado_id:, :obs:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AlunosController.php(146): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->create()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-23 13:22:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-23 13:22:37 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('cadastro_alunos', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-23 13:22:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:22:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:22:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:22:44 --> CSRF token verified.
+CRITICAL - 2024-03-23 13:22:44 --> ErrorException: Undefined array key "encarregado"
+in APPPATH\Controllers\AlunosController.php on line 145.
+ 1 APPPATH\Controllers\AlunosController.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "encarregado"', 'C:\\projects\\gestao-de-alunos\\app\\Controllers\\AlunosController.php', 145)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-23 13:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:23:40 --> CSRF token verified.
+ERROR - 2024-03-23 13:23:41 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gestao`.`alunos`, CONSTRAINT `aluno_encarregado` FOREIGN KEY (`encarregado_id`) REFERENCES `encarregados` (`id`)) in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `al...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `al...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `al...')
+#3 C:\projects\gestao-de-alunos\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `al...', Array, false)
+#4 C:\projects\gestao-de-alunos\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\projects\gestao-de-alunos\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\projects\gestao-de-alunos\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\projects\gestao-de-alunos\app\Controllers\AlunosController.php(146): CodeIgniter\Model->insert(Array)
+#8 C:\projects\gestao-de-alunos\system\CodeIgniter.php(941): App\Controllers\AlunosController->create()
+#9 C:\projects\gestao-de-alunos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+#10 C:\projects\gestao-de-alunos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\projects\gestao-de-alunos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\projects\gestao-de-alunos\system\Commands\Server\rewrite.php(47): require_once('C:\\projects\\ges...')
+#13 {main}
+CRITICAL - 2024-03-23 13:23:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`gestao`.`alunos`, CONSTRAINT `aluno_encarregado` FOREIGN KEY (`encarregado_id`) REFERENCES `encarregados` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (:nome:, :data_nascimento:, :classe:, :turno:, :sala:, :curso:, :localizacao:, :telefone:, :encarregado_id:, :obs:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AlunosController.php(146): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+CRITICAL - 2024-03-23 13:23:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`gestao`.`alunos`, CONSTRAINT `aluno_encarregado` FOREIGN KEY (`encarregado_id`) REFERENCES `encarregados` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (\'Fiston Dumba dos Santos\', \'2024-03-08\', \'8ª classe\', \'Manhã\', \'10\', \'C.E.J\', \'Ramiros\', \'9999999999\', \'1\', \'\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (\'Fiston Dumba dos Santos\', \'2024-03-08\', \'8ª classe\', \'Manhã\', \'10\', \'C.E.J\', \'Ramiros\', \'9999999999\', \'1\', \'\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (:nome:, :data_nascimento:, :classe:, :turno:, :sala:, :curso:, :localizacao:, :telefone:, :encarregado_id:, :obs:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\AlunosController.php(146): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+CRITICAL - 2024-03-23 13:23:41 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gestao`.`alunos`, CONSTRAINT `aluno_encarregado` FOREIGN KEY (`encarregado_id`) REFERENCES `encarregados` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (\'Fiston Dumba dos Santos\', \'2024-03-08\', \'8ª classe\', \'Manhã\', \'10\', \'C.E.J\', \'Ramiros\', \'9999999999\', \'1\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (\'Fiston Dumba dos Santos\', \'2024-03-08\', \'8ª classe\', \'Manhã\', \'10\', \'C.E.J\', \'Ramiros\', \'9999999999\', \'1\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (\'Fiston Dumba dos Santos\', \'2024-03-08\', \'8ª classe\', \'Manhã\', \'10\', \'C.E.J\', \'Ramiros\', \'9999999999\', \'1\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `alunos` (`nome`, `data_nascimento`, `classe`, `turno`, `sala`, `curso`, `localizacao`, `telefone`, `encarregado_id`, `obs`) VALUES (:nome:, :data_nascimento:, :classe:, :turno:, :sala:, :curso:, :localizacao:, :telefone:, :encarregado_id:, :obs:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AlunosController.php(146): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->create()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-23 13:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:26:59 --> CSRF token verified.
+INFO - 2024-03-23 13:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:27:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:33:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-23 13:33:11 --> mysqli_sql_exception: Unknown column 'a.encarregado_id' in 'on clause' in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\projects\gestao-de-alunos\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\projects\gestao-de-alunos\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\projects\gestao-de-alunos\system\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+#6 C:\projects\gestao-de-alunos\app\Controllers\AlunosController.php(38): CodeIgniter\BaseModel->paginate(10)
+#7 C:\projects\gestao-de-alunos\system\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+#8 C:\projects\gestao-de-alunos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+#9 C:\projects\gestao-de-alunos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\projects\gestao-de-alunos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\projects\gestao-de-alunos\system\Commands\Server\rewrite.php(47): require_once('C:\\projects\\ges...')
+#12 {main}
+CRITICAL - 2024-03-23 13:33:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'a.encarregado_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+LEFT JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\AlunosController.php(38): CodeIgniter\BaseModel->paginate(10)
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+CRITICAL - 2024-03-23 13:33:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'a.encarregado_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+LEFT JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+LEFT JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+LEFT JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`', [], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\AlunosController.php(38): CodeIgniter\BaseModel->paginate(10)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+CRITICAL - 2024-03-23 13:33:11 --> [Caused by] mysqli_sql_exception: Unknown column 'a.encarregado_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+LEFT JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+LEFT JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+LEFT JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+LEFT JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\AlunosController.php(38): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-23 13:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-23 13:33:29 --> mysqli_sql_exception: Unknown column 'a.encarregado_id' in 'on clause' in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\projects\gestao-de-alunos\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\projects\gestao-de-alunos\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\projects\gestao-de-alunos\system\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+#6 C:\projects\gestao-de-alunos\app\Controllers\AlunosController.php(38): CodeIgniter\BaseModel->paginate(10)
+#7 C:\projects\gestao-de-alunos\system\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+#8 C:\projects\gestao-de-alunos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+#9 C:\projects\gestao-de-alunos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\projects\gestao-de-alunos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\projects\gestao-de-alunos\system\Commands\Server\rewrite.php(47): require_once('C:\\projects\\ges...')
+#12 {main}
+CRITICAL - 2024-03-23 13:33:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'a.encarregado_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\AlunosController.php(38): CodeIgniter\BaseModel->paginate(10)
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+CRITICAL - 2024-03-23 13:33:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'a.encarregado_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`', [], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\AlunosController.php(38): CodeIgniter\BaseModel->paginate(10)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+CRITICAL - 2024-03-23 13:33:29 --> [Caused by] mysqli_sql_exception: Unknown column 'a.encarregado_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\AlunosController.php(38): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-23 13:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-23 13:34:18 --> mysqli_sql_exception: Unknown column 'a.encarregado_id' in 'on clause' in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\projects\gestao-de-alunos\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\projects\gestao-de-alunos\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\projects\gestao-de-alunos\system\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+#6 C:\projects\gestao-de-alunos\app\Controllers\AlunosController.php(38): CodeIgniter\BaseModel->paginate(10)
+#7 C:\projects\gestao-de-alunos\system\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+#8 C:\projects\gestao-de-alunos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+#9 C:\projects\gestao-de-alunos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\projects\gestao-de-alunos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\projects\gestao-de-alunos\system\Commands\Server\rewrite.php(47): require_once('C:\\projects\\ges...')
+#12 {main}
+CRITICAL - 2024-03-23 13:34:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'a.encarregado_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\AlunosController.php(38): CodeIgniter\BaseModel->paginate(10)
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+CRITICAL - 2024-03-23 13:34:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'a.encarregado_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`', [], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\AlunosController.php(38): CodeIgniter\BaseModel->paginate(10)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+CRITICAL - 2024-03-23 13:34:18 --> [Caused by] mysqli_sql_exception: Unknown column 'a.encarregado_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\AlunosController.php(38): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-23 13:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-23 13:34:25 --> mysqli_sql_exception: Unknown column 'a.encarregado_id' in 'on clause' in C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\projects\gestao-de-alunos\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\projects\gestao-de-alunos\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\projects\gestao-de-alunos\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\projects\gestao-de-alunos\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\projects\gestao-de-alunos\system\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+#6 C:\projects\gestao-de-alunos\app\Controllers\AlunosController.php(38): CodeIgniter\BaseModel->paginate(10)
+#7 C:\projects\gestao-de-alunos\system\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+#8 C:\projects\gestao-de-alunos\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+#9 C:\projects\gestao-de-alunos\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\projects\gestao-de-alunos\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\projects\gestao-de-alunos\system\Commands\Server\rewrite.php(47): require_once('C:\\projects\\ges...')
+#12 {main}
+CRITICAL - 2024-03-23 13:34:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'a.encarregado_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\AlunosController.php(38): CodeIgniter\BaseModel->paginate(10)
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+CRITICAL - 2024-03-23 13:34:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'a.encarregado_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`', [], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\AlunosController.php(38): CodeIgniter\BaseModel->paginate(10)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+CRITICAL - 2024-03-23 13:34:25 --> [Caused by] mysqli_sql_exception: Unknown column 'a.encarregado_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `alunos`
+JOIN `encarregados` as `e` ON `a`.`encarregado_id` = `e`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\AlunosController.php(38): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-23 13:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:35:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 13:36:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

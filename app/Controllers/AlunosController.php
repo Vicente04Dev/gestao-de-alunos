@@ -27,10 +27,13 @@ class AlunosController extends BaseController
 
         $model = model('AlunosModel');
 
-        $query = "SELECT alunos.nome, alunos.classe, alunos.turno, alunos.telefone,
-        alunos.sala, encarregados.nome FROM alunos LEFT JOIN encarregados ON alunos.encarregado_id = encarregados.id";
-        $quer2 = 'id, nome, classe, turno, telefone, sala';
+        //Using Join
 
+        $model->select('alunos.id as id, alunos.nome as nome, alunos.classe as classe, alunos.turno as turno, alunos.telefone as telefone, alunos.sala as sala, e.nome as encarregado');
+
+        $model->join('encarregados as e', 'alunos.encarregado_id = e.id');
+
+        //End join
     
         $data = ['title' => 'Lista de alunos', 'datas' => $model->paginate(10), 'pager' => $model->pager];
         return view('pages/alunos/lista', $data);
@@ -166,5 +169,20 @@ class AlunosController extends BaseController
         ];
         
         return view('pages/alunos/editar', $data);
+    }
+
+    private function getStudantes_Parents(){
+
+        $db = db_connect();
+
+        $builder = $db->table('alunos as a');
+
+        $builder->select('a.id as id, a.nome as nome, a.classe as classe, a.turno as turno, a.telefone as telefone, a.sala as sala, e.nome as encarregado');
+
+        $builder->join('encarregados as e', 'a.encarregado_id = e.id', 'left');
+
+        $result = $builder->get()->getResultObject();
+
+        return $result;
     }
 }
