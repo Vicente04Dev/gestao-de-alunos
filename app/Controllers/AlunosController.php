@@ -31,7 +31,7 @@ class AlunosController extends BaseController
 
         $model->select('alunos.id as id, alunos.nome as nome, alunos.classe as classe, alunos.turno as turno, alunos.telefone as telefone, alunos.sala as sala, e.nome as encarregado');
 
-        $model->join('encarregados as e', 'alunos.encarregado_id = e.id');
+        $model->join('encarregados as e', 'alunos.encarregado_id = e.id', 'left');
 
         //End join
     
