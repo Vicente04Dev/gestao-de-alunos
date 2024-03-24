@@ -17,39 +17,40 @@ class UserController extends BaseController
     {
         //
         $data = $this->request->getPost(['nome', 'usuario', 'senha', 'confirma_senha', 'papel']);
+        $user = new UserModel();
 
         $rules = [
-                'usuario' => 'required',
-                'nome' => 'required',
-                'senha' => 'required',
-                'confirma_senha' => 'required|matches[senha]',
-                'papel' => 'required'
-            ];
+            'usuario' => 'required|is_unique[users.usuario]',
+        'nome' => 'required',
+        'senha' => 'required',
+        'confirma_senha' => 'required|matches[senha]',
+        'papel' => 'required'
+        ];
 
-        $messages = [
-                'usuario'=> [
-                    'required' => 'O nome de usuário é obrigatório!',
-                ],
-                'senha'=> [
-                    'required' => 'A senha é obrigatória!'
-                ],
-                'nome'=> [
-                    'required' => 'Seu nome é obrigatório!'
-                ],
-                'confirma_senha' =>[
-                    'required' => 'Confirme a senha',
-                    'matches' => 'As senhas não coincidem.'
-                ]
-            ];
+        $message = [
+            'usuario'=> [
+                'required' => 'O nome de usuário é obrigatório!',
+                'is_unique' => 'Esse nome de usuário já esta sendo usado. Escolha outro.'
+            ],
+            'senha'=> [
+                'required' => 'A senha é obrigatória!'
+            ],
+            'nome'=> [
+                'required' => 'Seu nome é obrigatório!'
+            ],
+            'confirma_senha' =>[
+                'required' => 'Confirme a senha',
+                'matches' => 'As senhas não coincidem.'
+            ],
+        ];
 
-        if(!$this->validateData($data, $rules, $messages)){
+        if(!$this->validateData($data, $rules, $message)){
             return $this->index();
             
         }
         
         $post = $this->validator->getValidated();
 
-        $user = new UserModel();
         $user->insert([
             'nome' => $post['nome'],
             'usuario' => str_replace(' ', '-', trim(mb_strtolower($post['usuario']))),

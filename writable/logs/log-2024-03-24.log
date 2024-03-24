@@ -1,0 +1,319 @@
+INFO - 2024-03-24 08:22:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:22:19 --> CSRF token verified.
+INFO - 2024-03-24 08:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:43:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 08:43:48 --> CodeIgniter\I18n\Exceptions\I18nException: "j/M/Y" is not a valid datetime format
+in SYSTEMPATH\I18n\TimeTrait.php on line 251.
+ 1 SYSTEMPATH\I18n\TimeTrait.php(251): CodeIgniter\I18n\Exceptions\I18nException::forInvalidFormat('j/M/Y')
+ 2 APPPATH\Controllers\AlunosController.php(39): CodeIgniter\I18n\Time::createFromFormat('j/M/Y', '12/Ago/2002')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-24 08:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 08:44:13 --> CodeIgniter\I18n\Exceptions\I18nException: "j-M-Y" is not a valid datetime format
+in SYSTEMPATH\I18n\TimeTrait.php on line 251.
+ 1 SYSTEMPATH\I18n\TimeTrait.php(251): CodeIgniter\I18n\Exceptions\I18nException::forInvalidFormat('j-M-Y')
+ 2 APPPATH\Controllers\AlunosController.php(39): CodeIgniter\I18n\Time::createFromFormat('j-M-Y', '12/Ago/2002')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-24 08:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 08:44:45 --> CodeIgniter\I18n\Exceptions\I18nException: "j-M-Y" is not a valid datetime format
+in SYSTEMPATH\I18n\TimeTrait.php on line 251.
+ 1 SYSTEMPATH\I18n\TimeTrait.php(251): CodeIgniter\I18n\Exceptions\I18nException::forInvalidFormat('j-M-Y')
+ 2 APPPATH\Controllers\AlunosController.php(39): CodeIgniter\I18n\Time::createFromFormat('j-M-Y', '12/Ago/2002')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-24 08:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 08:45:02 --> CodeIgniter\I18n\Exceptions\I18nException: "j-M-Y" is not a valid datetime format
+in SYSTEMPATH\I18n\TimeTrait.php on line 251.
+ 1 SYSTEMPATH\I18n\TimeTrait.php(251): CodeIgniter\I18n\Exceptions\I18nException::forInvalidFormat('j-M-Y')
+ 2 APPPATH\Controllers\AlunosController.php(39): CodeIgniter\I18n\Time::createFromFormat('j-M-Y', '12-ago-2002')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-24 08:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:45:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 08:45:56 --> Exception: DateTimeZone::__construct(): Unknown or bad timezone (Africa/Angola)
+in SYSTEMPATH\I18n\TimeTrait.php on line 90.
+ 1 SYSTEMPATH\I18n\TimeTrait.php(90): DateTimeZone->__construct('Africa/Angola')
+ 2 SYSTEMPATH\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct('', 'Africa/Angola', null)
+ 3 APPPATH\Controllers\AlunosController.php(39): CodeIgniter\I18n\Time::now('Africa/Angola')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-24 08:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 08:46:42 --> CodeIgniter\I18n\Exceptions\I18nException: "d-m-Y" is not a valid datetime format
+in SYSTEMPATH\I18n\TimeTrait.php on line 251.
+ 1 SYSTEMPATH\I18n\TimeTrait.php(251): CodeIgniter\I18n\Exceptions\I18nException::forInvalidFormat('d-m-Y')
+ 2 APPPATH\Controllers\AlunosController.php(39): CodeIgniter\I18n\Time::createFromFormat('d-m-Y', '12-ago-2002')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-24 14:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:12:15 --> REDIRECTED ROUTE at http://localhost:8080/admin
+INFO - 2024-03-24 14:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:12:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:12:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:12:34 --> CSRF token verified.
+INFO - 2024-03-24 14:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:12:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:12:48 --> CSRF token verified.
+INFO - 2024-03-24 14:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:13:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 14:13:28 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('cadastro_users', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-24 14:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:13:35 --> CSRF token verified.
+INFO - 2024-03-24 14:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:14:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:14:36 --> CSRF token verified.
+CRITICAL - 2024-03-24 14:14:37 --> ErrorException: Attempt to read property "errno" on bool
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 578.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(578): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "errno" on bool', 'C:\\projects\\gestao-de-alunos\\system\\Database\\MySQLi\\Connection.php', 578)
+ 2 SYSTEMPATH\Model.php(508): CodeIgniter\Database\MySQLi\Connection->error()
+ 3 SYSTEMPATH\BaseModel.php(1213): CodeIgniter\Model->doErrors()
+ 4 APPPATH\Controllers\UserController.php(48): CodeIgniter\BaseModel->errors()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-24 14:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:15:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:16:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:16:41 --> CSRF token verified.
+CRITICAL - 2024-03-24 14:16:41 --> ErrorException: Attempt to read property "errno" on bool
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 578.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(578): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "errno" on bool', 'C:\\projects\\gestao-de-alunos\\system\\Database\\MySQLi\\Connection.php', 578)
+ 2 SYSTEMPATH\Model.php(508): CodeIgniter\Database\MySQLi\Connection->error()
+ 3 SYSTEMPATH\BaseModel.php(1213): CodeIgniter\Model->doErrors()
+ 4 APPPATH\Controllers\UserController.php(48): CodeIgniter\BaseModel->errors()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-24 14:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:16:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:16:58 --> CSRF token verified.
+CRITICAL - 2024-03-24 14:16:58 --> ErrorException: Attempt to read property "errno" on bool
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 578.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(578): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "errno" on bool', 'C:\\projects\\gestao-de-alunos\\system\\Database\\MySQLi\\Connection.php', 578)
+ 2 SYSTEMPATH\Model.php(508): CodeIgniter\Database\MySQLi\Connection->error()
+ 3 SYSTEMPATH\BaseModel.php(1213): CodeIgniter\Model->doErrors()
+ 4 APPPATH\Controllers\UserController.php(48): CodeIgniter\BaseModel->errors()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-24 14:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:18:36 --> CSRF token verified.
+CRITICAL - 2024-03-24 14:18:36 --> ErrorException: Attempt to read property "errno" on bool
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 578.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(578): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "errno" on bool', 'C:\\projects\\gestao-de-alunos\\system\\Database\\MySQLi\\Connection.php', 578)
+ 2 SYSTEMPATH\Model.php(508): CodeIgniter\Database\MySQLi\Connection->error()
+ 3 SYSTEMPATH\BaseModel.php(1213): CodeIgniter\Model->doErrors()
+ 4 APPPATH\Controllers\UserController.php(48): CodeIgniter\BaseModel->errors()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-24 14:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 14:19:03 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('cadastro_users', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-24 14:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:19:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:19:07 --> CSRF token verified.
+INFO - 2024-03-24 14:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:19:59 --> CSRF token verified.
+INFO - 2024-03-24 14:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:20:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:20:06 --> CSRF token verified.
+INFO - 2024-03-24 14:20:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:23:01 --> CSRF token verified.
+INFO - 2024-03-24 14:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:23:37 --> CSRF token verified.
+INFO - 2024-03-24 14:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:23:50 --> CSRF token verified.
+INFO - 2024-03-24 14:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:24:05 --> CSRF token verified.
+INFO - 2024-03-24 14:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:24:23 --> CSRF token verified.
+INFO - 2024-03-24 14:24:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:25:03 --> CSRF token verified.
+INFO - 2024-03-24 14:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:25:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:26:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:27:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:28:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:28:11 --> CSRF token verified.
+INFO - 2024-03-24 14:28:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:32:21 --> CSRF token verified.
+INFO - 2024-03-24 14:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:32:33 --> CSRF token verified.
+INFO - 2024-03-24 14:32:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:32:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:33:35 --> CSRF token verified.
+INFO - 2024-03-24 14:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:39:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:39:13 --> CSRF token verified.
+CRITICAL - 2024-03-24 14:39:13 --> ErrorException: Undefined variable $messages
+in APPPATH\Controllers\UserController.php on line 47.
+ 1 APPPATH\Controllers\UserController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $messages', 'C:\\projects\\gestao-de-alunos\\app\\Controllers\\UserController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-24 14:39:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:39:28 --> CSRF token verified.
+INFO - 2024-03-24 14:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:39:42 --> CSRF token verified.
+INFO - 2024-03-24 14:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:39:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:40:34 --> CSRF token verified.
+INFO - 2024-03-24 14:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 14:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 22:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 22:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 22:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 22:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 22:24:02 --> CSRF token verified.
+INFO - 2024-03-24 22:24:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 22:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 22:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 22:24:10 --> CodeIgniter\I18n\Exceptions\I18nException: "d-m-Y" is not a valid datetime format
+in SYSTEMPATH\I18n\TimeTrait.php on line 251.
+ 1 SYSTEMPATH\I18n\TimeTrait.php(251): CodeIgniter\I18n\Exceptions\I18nException::forInvalidFormat('d-m-Y')
+ 2 APPPATH\Controllers\AlunosController.php(39): CodeIgniter\I18n\Time::createFromFormat('d-m-Y', '12-ago-2002')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-24 22:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 22:24:27 --> CodeIgniter\I18n\Exceptions\I18nException: "d-m-Y" is not a valid datetime format
+in SYSTEMPATH\I18n\TimeTrait.php on line 251.
+ 1 SYSTEMPATH\I18n\TimeTrait.php(251): CodeIgniter\I18n\Exceptions\I18nException::forInvalidFormat('d-m-Y')
+ 2 APPPATH\Controllers\AlunosController.php(39): CodeIgniter\I18n\Time::createFromFormat('d-m-Y', '12-ago-2002')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AlunosController->listar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlunosController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\projects\\gestao-de-alunos\\public\\index.php')
+INFO - 2024-03-24 22:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 22:25:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 22:26:49 --> ParseError: syntax error, unexpected variable "$routes"
+in APPPATH\Config\Routes.php on line 44.
+ 1 SYSTEMPATH\CLI\Console.php(39): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-03-24 22:27:05 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\projects\gestao-de-alunos\app\Config\Routes.php on line 42 and at least 2 expected
+in SYSTEMPATH\Router\RouteCollection.php on line 1018.
+ 1 APPPATH\Config\Routes.php(42): CodeIgniter\Router\RouteCollection->get('notas_alunos')
+ 2 SYSTEMPATH\Router\RouteCollection.php(345): require('C:\\projects\\gestao-de-alunos\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CLI\Console.php(39): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+INFO - 2024-03-24 22:29:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 22:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 22:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 22:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

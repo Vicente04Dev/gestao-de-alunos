@@ -7,6 +7,7 @@ use App\Models\AlunosModel;
 use App\Models\EncarregadosModel;
 use CodeIgniter\Database\Exceptions\DatabaseException;
 use CodeIgniter\HTTP\ResponseInterface;
+use CodeIgniter\I18n\Time;
 
 class AlunosController extends BaseController
 {

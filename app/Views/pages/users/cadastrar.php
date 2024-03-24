@@ -28,38 +28,43 @@
         <?php endif ?>
 
         <?= form_open('cadastro_users') ?>
-        <?= csrf_field(); ?>
+            <?= csrf_field(); ?>
 
-        <div class="row mb-3">
+            <div class="row mb-3">
 
-            <div class="mb-1 col-sm-6">
-                <label for="nome">Nome</label>
-                <input type="text" class="form-control" name="nome" id="nome" placeholder="nome do usuário" value="<?= set_value('nome')?>">
+                <div class="mb-1 col-sm-6">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" name="nome" id="nome" placeholder="nome do usuário" value="<?= set_value('nome') ?>">
+                </div>
+                <div class="mb-1 col-sm-6">
+                    <label for="usuario">Nome de usuário</label>
+                    <input type="text" class="form-control" name="usuario" id="usuario" placeholder="nome de acesso" value="<?= set_value('usuario') ?>">
+                </div>
+
             </div>
-            <div class="mb-1 col-sm-6">
-                <label for="usuario">Nome de usuário</label>
-                <input type="text" class="form-control" name="usuario" id="usuario" placeholder="nome de acesso" value="<?= set_value('usuario')?>">
+
+            <div class="row mb-3">
+
+                <div class="mb-1 col-sm-4">
+                    <label for="senha">Senha</label>
+                    <input type="password" class="form-control" name="senha" id="senha" placeholder="senha de acesso" value="<?= set_value('senha') ?>">
+                </div>
+                <div class="mb-1 col-sm-4">
+                    <label for="confirma_senha">Confirmar senha</label>
+                    <input type="password" class="form-control" name="confirma_senha" id="confirma_senha"
+                        placeholder="confirme a senha de acesso" value="<?= set_value('confirma_senha') ?>">
+                </div>
+                <div class="mb-1 col-sm-4">
+                    <label for="papel">Papel</label>
+                    <select class="form-select" id="papel" name="papel">
+                        <option value="professor">Professor</option>
+                        <option value="adm">Administrador</option>
+                    </select>
+                </div>
             </div>
-        </div>
-        <div class="row mb-3">
-            <div class="mb-1 col-sm-4">
-                <label for="senha">Senha</label>
-                <input type="password" class="form-control" name="senha" id="senha" placeholder="senha de acesso" value="<?= set_value('senha')?>">
-            </div>
-            <div class="mb-1 col-sm-4">
-                <label for="confirma_senha">Confirmar senha</label>
-                <input type="password" class="form-control" name="confirma_senha" id="confirma_senha" placeholder="confirme a senha de acesso" value="<?= set_value('confirma_senha')?>">
-            </div>
-            <div class="mb-1 col-sm-4">
-                <label for="papel">Papel</label>
-                <select class="form-select" id="papel" name="papel">
-                    <option value="professor">Professor</option>
-                    <option value="adm">Administrador</option>
-                </select>
-            </div>
-        </div>
-        <button type="submit" class="btn btn-primary btn-md">Cadastrar usuário</button>
-        <button type="button" class="btn btn-danger btn-md" data-bs-dismiss="modal">Sair</button>
+
+            <button type="submit" class="btn btn-primary btn-md">Cadastrar usuário</button>
+            <button type="button" class="btn btn-danger btn-md" data-bs-dismiss="modal">Sair</button>
         <?= form_close() ?>
     </div>
 </div>

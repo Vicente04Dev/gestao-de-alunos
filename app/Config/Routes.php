@@ -38,6 +38,8 @@ $routes->get('lista_alunos', 'AlunosController::listar', ['filter' => 'auth']);
 $routes->get('aluno_editar/(:num)', 'AlunosController::editar/$1', ['filter' => 'auth']);
 $routes->post('cadastro_alunos', 'AlunosController::create');
 
+//Notas Routes
+$routes->get('notas_alunos', 'NotasController::index', ['filter' => 'auth']);
 //Professores Routes
 $routes->get('professores', 'ProfessoresController::index', ['filter' => 'auth']);
 $routes->get('professores_lista', 'ProfessoresController::listar', ['filter' => 'auth']);
