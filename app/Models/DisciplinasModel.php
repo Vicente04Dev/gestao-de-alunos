@@ -4,15 +4,15 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class NotasModel extends Model
+class DisciplinasModel extends Model
 {
-    protected $table            = 'notas';
+    protected $table            = 'disciplinas';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'array';
+    protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['aluno_id', 'disciplina_id', 'trimestre', 'ano_lectivo', 'mac', 'npp', 'npt', 'mt'];
+    protected $allowedFields    = [];
 
     protected bool $allowEmptyInserts = false;
 

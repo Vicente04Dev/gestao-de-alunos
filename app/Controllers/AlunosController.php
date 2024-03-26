@@ -44,10 +44,9 @@ class AlunosController extends BaseController
         $model = new AlunosModel();
 
         try {
-            $image = $model->select('imagem')->where(['id' => $id])->asObject();
 
             $model->delete($id);
-            unlink('uploads/imagens_alunos/'. $image->imagem);
+            
         } catch (DatabaseException $th) {
             //throw $th;
             return redirect()->to(base_url('lista_alunos'))

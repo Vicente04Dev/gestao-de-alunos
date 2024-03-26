@@ -40,6 +40,9 @@ $routes->post('cadastro_alunos', 'AlunosController::create');
 
 //Notas Routes
 $routes->get('notas_alunos', 'NotasController::index', ['filter' => 'auth']);
+$routes->post('cadastro_notas', 'NotasController::create', ['filter' => 'auth']);
+
+
 //Professores Routes
 $routes->get('professores', 'ProfessoresController::index', ['filter' => 'auth']);
 $routes->get('professores_lista', 'ProfessoresController::listar', ['filter' => 'auth']);

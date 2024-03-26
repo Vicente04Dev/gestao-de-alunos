@@ -115,6 +115,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
           icon: "<?= session()->getFlashdata('status_icon') ?>",
           button: "<?= session()->getFlashdata('status_button') ?>",
         })
+      <?php elseif (session()->getFlashdata('type') == "cadastro_notas"): ?>
+        swal({
+          title: "<?= session()->getFlashdata('status') ?>",
+          text: "<?= session()->getFlashdata('status_text') ?>",
+          icon: "<?= session()->getFlashdata('status_icon') ?>",
+          button: "<?= session()->getFlashdata('status_button') ?>",
+        })
       <?php endif ?>
     })
     function previewImagem() {
@@ -132,6 +139,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
       } else {
         preview.src = "";
       }
+    }
+
+    function calcularMediaTrimestre(){
+      
+      mac = parseInt(document.getElementById('mac').value);
+      npp = parseInt(document.getElementById('npp').value);
+      npt = parseInt(document.getElementById('npt').value);
+      
+
+      mt = (mac + npp + npt) / 3;
+
+      console.log('MT: '+ mt);
+      
+      document.getElementById('mt').value = mt ;
     }
   </script>
   <!-- Bootstrap 4 -->
