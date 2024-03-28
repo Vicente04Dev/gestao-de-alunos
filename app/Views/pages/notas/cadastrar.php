@@ -30,7 +30,8 @@
 
             <div class="mb-1 col-sm-4">
                 <label for="aluno_id">Nome do aluno</label>
-                <select class="form-select" id="aluno_id" name="aluno_id">
+                <input type="text" id="aluno_id" name="aluno_id">
+                <select class="form-select" name="aluno_id">
                     <?php foreach($alunos as $aluno): ?>
                         <option value="<?= $aluno->id ?>"> <?= $aluno->nome ?> </option>
                     <?php endforeach ?>
@@ -39,14 +40,14 @@
 
             <div class="mb-1 col-sm-4">
                 <label for="dsiciplina_id">Disciplina</label>
-                <select class="form-select" id="disciplina_id" name="disciplina_id">
+                <select class="form-select" id="dsiciplina_id" name="disciplina_id">
                     <?php foreach($disciplinas as $disciplina): ?>
                         <option value="<?= $disciplina->id ?>"> <?= $disciplina->nome ?> </option>
                     <?php endforeach ?>
                 </select>
             </div>
             <div class="mb-1 col-sm-2">
-                <label for="trimeste">Trimeste</label>
+                <label for="trimestre">Trimeste</label>
                 <select class="form-select" id="trimestre" name="trimestre">
                     <option value="Iº Trimeste">Iº Trimeste</option>
                     <option value="IIº Trimeste">IIº Trimeste</option>
@@ -63,18 +64,18 @@
             <div class="mb-1 col-sm-2">
                 <label for="mac">MAC</label>
                 <input type="text" class="form-control" id="mac" name="mac" value="<?= set_value('mac') ?>"
-                    placeholder="mac">
+                    placeholder="mac" onkeypress="return onlyNumber(event);" >
             </div>
             <div class="mb-1 col-sm-2">
-                <label for="NPP">NPP</label>
+                <label for="npp">NPP</label>
                 <input type="text" class="form-control" id="npp" name="npp" value="<?= set_value('npp') ?>"
-                    placeholder="npp">
+                    placeholder="npp" onkeypress="return onlyNumber(event);">
             </div>
 
             <div class="mb-1 col-sm-2">
                 <label for="npt">NPT</label>
                 <input type="text" class="form-control" id="npt" name="npt" placeholder="npt"
-                    value="<?= set_value('npt') ?>">
+                    value="<?= set_value('npt') ?>" onkeypress="return onlyNumber(event);">
             </div>
             <div class="col-sm-4">
                 <label for="mt">MT</label>

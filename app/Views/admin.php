@@ -2,8 +2,7 @@
 
 <?= $this->section('content') ?>
 
-<h1>Home 3</h1>
+<h1>Página inicial</h1>
 
-<button type="button" class="btn btn-primary" onclick="clicar()">Teste Sweet Alert</button>
 
 <?= $this->endSection() ?>

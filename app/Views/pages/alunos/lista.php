@@ -49,7 +49,7 @@
                         <?= $value->sala ?>
                     </td>
                     <td>
-                        <?= $value->encarregado ?>
+                        <a href="#"><?= $value->encarregado ?></a>
                     </td>
                     <td>  
                         <a href="aluno_editar/<?= $value->id ?>" class="btn btn-primary btn-sm">Editar</a>

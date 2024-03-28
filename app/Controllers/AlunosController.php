@@ -91,7 +91,7 @@ class AlunosController extends BaseController
             'obs' => 'max_length[500]',
             'sala' => 'required',
             'localizacao' => 'required',
-            'telefone' => 'is_unique[alunos.telefone]',
+            'telefone' => 'max_length[20]',
             'encarregado' => 'required'
         ];
 
@@ -125,7 +125,7 @@ class AlunosController extends BaseController
                 'required' => 'digite a localização do aluno'
             ],
             'telefone' => [
-                'is_unique' => 'já existe um aluno com esse número de telefone'
+                'max_length' => 'o número de telfone está num formato inválido!'
             ],
         ];
 
@@ -171,7 +171,7 @@ class AlunosController extends BaseController
         return view('pages/alunos/editar', $data);
     }
 
-    private function getStudantes_Parents(){
+    private function getStudants_Parents(){
 
         $db = db_connect();
 

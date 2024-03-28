@@ -60,6 +60,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- jQuery -->
   <script src="plugins/jquery/jquery.min.js"></script>
   <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
 
   <!-- Código para mostrar o preview da imagem -->
   <script src="js/sweetalert.min.js"></script>
@@ -123,8 +124,30 @@ scratch. This page gets rid of all links and provides the needed markup only.
           button: "<?= session()->getFlashdata('status_button') ?>",
         })
       <?php endif ?>
-    })
+    });
+
+    $('#aluno_id').autocomplete({
+          source: [
+            'Apple',
+            'Ananaz',
+            'Banana'
+          ],
+          select: function(event, selectData){
+            console.log(selectData);
+          }
+      });
+    function onlyNumber(e){
+
+      let keyCode = e.keyCode || e.witch;
+
+      var regex = /^[0-9]+$/;
+
+      let valid = regex.test(String.fromCharCode(keyCode));
+      return valid;
+    }
+
     function previewImagem() {
+
       let imagem = document.querySelector('input[name=imagem]').files[0];
       let preview = document.querySelector('#imagem');
 
@@ -148,9 +171,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       npt = parseInt(document.getElementById('npt').value);
       
 
-      mt = (mac + npp + npt) / 3;
-
-      console.log('MT: '+ mt);
+      mt = Math.round((mac + npp + npt) / 3);
       
       document.getElementById('mt').value = mt ;
     }
